@@ -11,7 +11,7 @@
 ## Basic Overview  [Live Demo](https://react-shopping-cart-67954.firebaseapp.com/)
 
 This simple shopping cart prototype shows how React components and Redux can be used to build a
-friendly user experience with instant visual updates and scaleable code in ecommerce applications. 
+friendly user experience with instant visual updates and scaleable code in ecommerce applications.
 
 
 #### Features
@@ -71,9 +71,11 @@ The application will start automatically in your browser on `http://localhost:30
 <br/>
 
 ### Copyright and license
+
 The MIT License (MIT). Please see License File for more information.
 
 ### Todo
+
 - [ ] Implement filters by URL params using react-router
 
 <br/>
@@ -83,4 +85,3 @@ The MIT License (MIT). Please see License File for more information.
 <p align="center">
 <sub>A little project by <a href="http://www.jeffersonribeiro.com/">Jefferson Ribeiro</a></sub>
 </p>
-
