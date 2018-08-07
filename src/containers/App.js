@@ -9,7 +9,7 @@ import Footer from '../components/Footer';
 import FloatCart from './../components/floatCart/FloatCart';
 
 import store from '../store';
-import Corner from '../components/github/Corner';
+import Corner from '../components/rmitLogo/Corner';
 
 
 class App extends Component {
