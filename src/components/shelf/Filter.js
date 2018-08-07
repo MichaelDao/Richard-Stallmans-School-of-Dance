@@ -6,7 +6,6 @@ import { connect } from "react-redux";
 import { updateFilters } from '../../store/actions/filterActions';
 
 import Checkbox from '../Checkbox';
-import StarButton from '../github/StarButton';
 
 const availableSizes = [
   'XS',
@@ -16,6 +15,11 @@ const availableSizes = [
   'L',
   'XL',
   'XXL',
+];
+
+const availableGenders = [
+  'Male',
+  'Female',
 ];
 
 class Filter extends Component {
@@ -34,9 +38,18 @@ class Filter extends Component {
     this.props.updateFilters(Array.from(this.selectedCheckboxes));
   }
 
+
   createCheckbox = (label) => (
     <Checkbox
         classes="filters-available-size"
+        label={label}
+        handleCheckboxChange={this.toggleCheckbox}
+        key={label}
+    />
+  )
+  createGenderbox = (label) => (
+    <Checkbox
+        classes="filters-available-gender"
         label={label}
         handleCheckboxChange={this.toggleCheckbox}
         key={label}
@@ -47,12 +60,17 @@ class Filter extends Component {
     availableSizes.map(this.createCheckbox)
   )
 
+  createGenderboxes = () => (
+      availableGenders.map(this.createGenderbox)
+  )
+
   render() {
     return (
       <div className="filters">
         <h4 className="title">Sizes:</h4>
         {this.createCheckboxes()}
-        <StarButton />
+        <h4 className="title">Genders:</h4>
+        {this.createGenderboxes()}
       </div>
     );
   }
