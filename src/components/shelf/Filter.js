@@ -6,7 +6,7 @@ import { connect } from "react-redux";
 import { updateFilters } from '../../store/actions/filterActions';
 
 import Checkbox from '../Checkbox';
-import StarButton from '../github/StarButton';
+import StarButton from '../rmitLogo/StarButton';
 
 const availableSizes = [
   'XS',
