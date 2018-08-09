@@ -186,16 +186,19 @@ footer {
     .shelf-container .shelf-item:hover {
       border: 1px solid #eee; }
       .shelf-container .shelf-item:hover .shelf-item__buy-btn {
-        background-color: #eabf00; }
+        background-color: #DC241F; }
     .shelf-container .shelf-item .shelf-stopper {
-      position: absolute;
-      color: #ececec;
-      top: 10px;
-      right: 10px;
-      padding: 5px;
-      font-size: 0.6em;
-      background-color: #1b1a20;
+      border-radius: 8px;
+      color: #DC241F;
+      padding-bottom: 20px;
+      font-size: 1em;
       cursor: default; }
+      .shelf-stopper::before {
+        content: "🛒 "
+      }
+      .shelf-stopper::after {
+        content: " 🔥"
+      }
     .shelf-container .shelf-item__thumb img {
       width: 100%; }
     .shelf-container .shelf-item__title {
@@ -206,7 +209,7 @@ footer {
         content: '';
         width: 20px;
         height: 2px;
-        background-color: #eabf00;
+        background-color: #DC241F;
         position: absolute;
         bottom: 0;
         left: 50%;
@@ -219,12 +222,13 @@ footer {
       .shelf-container .shelf-item__price .installment {
         color: #9c9b9b; }
     .shelf-container .shelf-item__buy-btn {
-      background-color: #1b1a20;
+      background-color: rgb(165, 19, 14);
+      border-radius: 15px;
       color: #fff;
       padding: 15px 0;
       margin-top: 10px;
       cursor: pointer;
-      transition: background-color 0.2s; }
+      transition: background-color 0.4s; }
 
 .float-cart {
   position: fixed;
