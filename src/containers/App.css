@@ -52,6 +52,55 @@ footer {
   .filters .title {
     margin-top: 2px;
     margin-bottom: 20px; }
+    .filters-available-gender {
+      display: inline-block;
+      margin-bottom: 10px;
+      /* Customize the label (the container) */ }
+      .filters-available-gender label {
+        display: inline-block;
+        position: relative;
+        cursor: pointer;
+        font-size: 22px;
+        -webkit-user-select: none;
+        -moz-user-select: none;
+        -ms-user-select: none;
+        user-select: none;
+        width: 35px;
+        height: 35px;
+        font-size: 0.8em;
+        margin-bottom: 8px;
+        margin-right: 8px;
+        border-radius: 50%;
+        line-height: 35px;
+        text-align: center;
+        /* On mouse-over, add a grey background color */
+        /* When the checkbox is checked, add a blue background */
+        /* Show the checkmark when checked */
+        /* Create a custom checkbox */ }
+        .filters-available-gender label:hover input ~ .checkmark {
+          border: 1px solid #1b1a20; }
+        .filters-available-gender label input:checked ~ .checkmark {
+          background-color: #1b1a20;
+          color: #ececec; }
+        .filters-available-gender label input:checked ~ .checkmark:after {
+          display: block; }
+        .filters-available-gender label input {
+          position: absolute;
+          opacity: 0;
+          cursor: pointer; }
+        .filters-available-gender label .checkmark {
+          position: absolute;
+          top: 0;
+          left: 0;
+          width: 35px;
+          height: 35px;
+          font-size: 0.8em;
+          border-radius: 50%;
+          line-height: 35px;
+          text-align: center;
+          color: #1b1a20;
+          background-color: #ececec;
+          border: 1px solid transparent; }
   .filters-available-size {
     display: inline-block;
     margin-bottom: 10px;
