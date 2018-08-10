@@ -31,11 +31,11 @@ main {
   width: 100%; }
 
 footer {
-  color: #aaa;
+  color: #e60028;
   padding: 20px 0;
   text-align: center; }
   footer a {
-    color: #aaa;
+    color: #e60028;
     text-decoration: none; }
     footer a:hover {
       text-decoration: underline; }
