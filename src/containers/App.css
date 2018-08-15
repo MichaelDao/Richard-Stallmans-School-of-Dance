@@ -31,11 +31,11 @@ main {
   width: 100%; }
 
 footer {
-  color: #aaa;
+  color: #e60028;
   padding: 20px 0;
   text-align: center; }
   footer a {
-    color: #aaa;
+    color: #e60028;
     text-decoration: none; }
     footer a:hover {
       text-decoration: underline; }
@@ -52,6 +52,55 @@ footer {
   .filters .title {
     margin-top: 2px;
     margin-bottom: 20px; }
+    .filters-available-gender {
+      display: inline-block;
+      margin-bottom: 10px;
+      /* Customize the label (the container) */ }
+      .filters-available-gender label {
+        display: inline-block;
+        position: relative;
+        cursor: pointer;
+        font-size: 22px;
+        -webkit-user-select: none;
+        -moz-user-select: none;
+        -ms-user-select: none;
+        user-select: none;
+        width: 35px;
+        height: 35px;
+        font-size: 0.8em;
+        margin-bottom: 8px;
+        margin-right: 8px;
+        border-radius: 50%;
+        line-height: 35px;
+        text-align: center;
+        /* On mouse-over, add a grey background color */
+        /* When the checkbox is checked, add a blue background */
+        /* Show the checkmark when checked */
+        /* Create a custom checkbox */ }
+        .filters-available-gender label:hover input ~ .checkmark {
+          border: 1px solid #1b1a20; }
+        .filters-available-gender label input:checked ~ .checkmark {
+          background-color: #1b1a20;
+          color: #ececec; }
+        .filters-available-gender label input:checked ~ .checkmark:after {
+          display: block; }
+        .filters-available-gender label input {
+          position: absolute;
+          opacity: 0;
+          cursor: pointer; }
+        .filters-available-gender label .checkmark {
+          position: absolute;
+          top: 0;
+          left: 0;
+          width: 35px;
+          height: 35px;
+          font-size: 0.8em;
+          border-radius: 50%;
+          line-height: 35px;
+          text-align: center;
+          color: #1b1a20;
+          background-color: #ececec;
+          border: 1px solid transparent; }
   .filters-available-size {
     display: inline-block;
     margin-bottom: 10px;
@@ -137,16 +186,19 @@ footer {
     .shelf-container .shelf-item:hover {
       border: 1px solid #eee; }
       .shelf-container .shelf-item:hover .shelf-item__buy-btn {
-        background-color: #eabf00; }
+        background-color: #DC241F; }
     .shelf-container .shelf-item .shelf-stopper {
-      position: absolute;
-      color: #ececec;
-      top: 10px;
-      right: 10px;
-      padding: 5px;
-      font-size: 0.6em;
-      background-color: #1b1a20;
+      border-radius: 8px;
+      color: #DC241F;
+      padding-bottom: 20px;
+      font-size: 1em;
       cursor: default; }
+      .shelf-stopper::before {
+        content: "🛒 "
+      }
+      .shelf-stopper::after {
+        content: " 🔥"
+      }
     .shelf-container .shelf-item__thumb img {
       width: 100%; }
     .shelf-container .shelf-item__title {
@@ -157,7 +209,7 @@ footer {
         content: '';
         width: 20px;
         height: 2px;
-        background-color: #eabf00;
+        background-color: #DC241F;
         position: absolute;
         bottom: 0;
         left: 50%;
@@ -170,12 +222,13 @@ footer {
       .shelf-container .shelf-item__price .installment {
         color: #9c9b9b; }
     .shelf-container .shelf-item__buy-btn {
-      background-color: #1b1a20;
+      background-color: rgb(165, 19, 14);
+      border-radius: 15px;
       color: #fff;
       padding: 15px 0;
       margin-top: 10px;
       cursor: pointer;
-      transition: background-color 0.2s; }
+      transition: background-color 0.4s; }
 
 .float-cart {
   position: fixed;
