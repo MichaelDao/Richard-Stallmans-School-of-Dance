@@ -2,15 +2,10 @@
 <project version="4">
   <component name="ChangeListManager">
     <list default="true" id="026c35d7-2a35-4a5a-b4ce-c1948b184a87" name="Default" comment="">
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/src/components/shelf/CurrencySelect.js" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/src/store/actions/currencyActions.js" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/src/components/rmitLogo/StarButton.js" afterPath="" />
       <change type="MODIFICATION" beforePath="$PROJECT_DIR$/.idea/workspace.xml" afterPath="$PROJECT_DIR$/.idea/workspace.xml" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/src/components/rmitLogo/style.css" afterPath="$PROJECT_DIR$/src/components/rmitLogo/style.css" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/src/components/shelf/Shelf.js" afterPath="$PROJECT_DIR$/src/components/shelf/Shelf.js" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/src/components/shelf/ShelfHeader.js" afterPath="$PROJECT_DIR$/src/components/shelf/ShelfHeader.js" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/src/components/Selectbox.js" afterPath="$PROJECT_DIR$/src/components/Selectbox.js" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/src/components/shelf/CurrencySelect.js" afterPath="$PROJECT_DIR$/src/components/shelf/CurrencySelect.js" />
       <change type="MODIFICATION" beforePath="$PROJECT_DIR$/src/components/shelf/Sort.js" afterPath="$PROJECT_DIR$/src/components/shelf/Sort.js" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/src/store/actions/types.js" afterPath="$PROJECT_DIR$/src/store/actions/types.js" />
     </list>
     <ignored path="$PROJECT_DIR$/.tmp/" />
     <ignored path="$PROJECT_DIR$/temp/" />
@@ -24,11 +19,23 @@
   </component>
   <component name="FileEditorManager">
     <leaf SIDE_TABS_SIZE_LIMIT_KEY="300">
-      <file leaf-file-name="CurrencySelect.js" pinned="false" current-in-tab="false">
+      <file leaf-file-name="CurrencySelect.js" pinned="false" current-in-tab="true">
         <entry file="file://$PROJECT_DIR$/src/components/shelf/CurrencySelect.js">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="225">
-              <caret line="31" column="28" lean-forward="false" selection-start-line="31" selection-start-column="28" selection-end-line="31" selection-end-column="28" />
+            <state relative-caret-position="306">
+              <caret line="19" column="5" lean-forward="false" selection-start-line="19" selection-start-column="5" selection-end-line="19" selection-end-column="5" />
+              <folding>
+                <element signature="e#0#39#0" expanded="true" />
+              </folding>
+            </state>
+          </provider>
+        </entry>
+      </file>
+      <file leaf-file-name="Selectbox.js" pinned="false" current-in-tab="false">
+        <entry file="file://$PROJECT_DIR$/src/components/Selectbox.js">
+          <provider selected="true" editor-type-id="text-editor">
+            <state relative-caret-position="102">
+              <caret line="12" column="23" lean-forward="true" selection-start-line="12" selection-start-column="23" selection-end-line="12" selection-end-column="23" />
               <folding>
                 <element signature="e#0#39#0" expanded="true" />
               </folding>
@@ -40,7 +47,7 @@
         <entry file="file://$PROJECT_DIR$/src/components/shelf/Sort.js">
           <provider selected="true" editor-type-id="text-editor">
             <state relative-caret-position="225">
-              <caret line="36" column="3" lean-forward="false" selection-start-line="36" selection-start-column="3" selection-end-line="36" selection-end-column="3" />
+              <caret line="21" column="12" lean-forward="true" selection-start-line="21" selection-start-column="12" selection-end-line="21" selection-end-column="12" />
               <folding>
                 <element signature="e#0#41#0" expanded="true" />
               </folding>
@@ -48,7 +55,7 @@
           </provider>
         </entry>
       </file>
-      <file leaf-file-name="Shelf.js" pinned="false" current-in-tab="true">
+      <file leaf-file-name="Shelf.js" pinned="false" current-in-tab="false">
         <entry file="file://$PROJECT_DIR$/src/components/shelf/Shelf.js">
           <provider selected="true" editor-type-id="text-editor">
             <state relative-caret-position="1360">
@@ -91,10 +98,11 @@
         <option value="$PROJECT_DIR$/src/components/rmitLogo/style.css" />
         <option value="$PROJECT_DIR$/src/store/actions/types.js" />
         <option value="$PROJECT_DIR$/src/store/actions/currencyActions.js" />
-        <option value="$PROJECT_DIR$/src/components/shelf/CurrencySelect.js" />
-        <option value="$PROJECT_DIR$/src/components/shelf/Sort.js" />
         <option value="$PROJECT_DIR$/src/components/shelf/ShelfHeader.js" />
         <option value="$PROJECT_DIR$/src/components/shelf/Shelf.js" />
+        <option value="$PROJECT_DIR$/src/components/Selectbox.js" />
+        <option value="$PROJECT_DIR$/src/components/shelf/Sort.js" />
+        <option value="$PROJECT_DIR$/src/components/shelf/CurrencySelect.js" />
       </list>
     </option>
   </component>
@@ -142,32 +150,6 @@
               <item name="RichardStallman-sSchoolofDance" type="b2602c69:ProjectViewProjectNode" />
               <item name="RichardStallman-sSchoolofDance" type="462c0819:PsiDirectoryNode" />
               <item name="src" type="462c0819:PsiDirectoryNode" />
-            </path>
-            <path>
-              <item name="RichardStallman-sSchoolofDance" type="b2602c69:ProjectViewProjectNode" />
-              <item name="RichardStallman-sSchoolofDance" type="462c0819:PsiDirectoryNode" />
-              <item name="src" type="462c0819:PsiDirectoryNode" />
-              <item name="components" type="462c0819:PsiDirectoryNode" />
-            </path>
-            <path>
-              <item name="RichardStallman-sSchoolofDance" type="b2602c69:ProjectViewProjectNode" />
-              <item name="RichardStallman-sSchoolofDance" type="462c0819:PsiDirectoryNode" />
-              <item name="src" type="462c0819:PsiDirectoryNode" />
-              <item name="components" type="462c0819:PsiDirectoryNode" />
-              <item name="shelf" type="462c0819:PsiDirectoryNode" />
-            </path>
-            <path>
-              <item name="RichardStallman-sSchoolofDance" type="b2602c69:ProjectViewProjectNode" />
-              <item name="RichardStallman-sSchoolofDance" type="462c0819:PsiDirectoryNode" />
-              <item name="src" type="462c0819:PsiDirectoryNode" />
-              <item name="store" type="462c0819:PsiDirectoryNode" />
-            </path>
-            <path>
-              <item name="RichardStallman-sSchoolofDance" type="b2602c69:ProjectViewProjectNode" />
-              <item name="RichardStallman-sSchoolofDance" type="462c0819:PsiDirectoryNode" />
-              <item name="src" type="462c0819:PsiDirectoryNode" />
-              <item name="store" type="462c0819:PsiDirectoryNode" />
-              <item name="actions" type="462c0819:PsiDirectoryNode" />
             </path>
           </expand>
           <select />
@@ -218,18 +200,18 @@
       <workItem from="1533818117074" duration="523000" />
       <workItem from="1533966087984" duration="15000" />
       <workItem from="1534306082744" duration="123000" />
-      <workItem from="1534343978127" duration="4597000" />
+      <workItem from="1534343978127" duration="6867000" />
     </task>
     <servers />
   </component>
   <component name="TimeTrackingManager">
-    <option name="totallyTimeSpent" value="9715000" />
+    <option name="totallyTimeSpent" value="11985000" />
   </component>
   <component name="ToolWindowManager">
     <frame x="9" y="16" width="1348" height="743" extended-state="0" />
     <editor active="true" />
     <layout>
-      <window_info id="Project" active="false" anchor="left" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="true" show_stripe_button="true" weight="0.16517857" sideWeight="0.5" order="0" side_tool="false" content_ui="combo" />
+      <window_info id="Project" active="false" anchor="left" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="true" show_stripe_button="true" weight="0.1235119" sideWeight="0.5" order="0" side_tool="false" content_ui="combo" />
       <window_info id="TODO" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.33" sideWeight="0.5" order="6" side_tool="false" content_ui="tabs" />
       <window_info id="Event Log" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.33" sideWeight="0.5" order="7" side_tool="true" content_ui="tabs" />
       <window_info id="Find" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="true" show_stripe_button="true" weight="0.32868218" sideWeight="0.5" order="1" side_tool="false" content_ui="tabs" />
@@ -461,7 +443,7 @@
         <state relative-caret-position="-226">
           <caret line="0" column="0" lean-forward="false" selection-start-line="0" selection-start-column="0" selection-end-line="0" selection-end-column="0" />
           <folding>
-            <element signature="e#0#41#0" expanded="true" />
+            <element signature="e#0#41#0" expanded="false" />
           </folding>
         </state>
       </provider>
@@ -471,7 +453,7 @@
         <state relative-caret-position="0">
           <caret line="0" column="0" lean-forward="false" selection-start-line="0" selection-start-column="0" selection-end-line="0" selection-end-column="0" />
           <folding>
-            <element signature="e#0#26#0" expanded="true" />
+            <element signature="e#0#26#0" expanded="false" />
           </folding>
         </state>
       </provider>
@@ -523,7 +505,7 @@
         <state relative-caret-position="-906">
           <caret line="0" column="0" lean-forward="false" selection-start-line="0" selection-start-column="0" selection-end-line="0" selection-end-column="0" />
           <folding>
-            <element signature="e#0#41#0" expanded="true" />
+            <element signature="e#0#41#0" expanded="false" />
           </folding>
         </state>
       </provider>
@@ -559,7 +541,7 @@
         <state relative-caret-position="-1008">
           <caret line="0" column="0" lean-forward="false" selection-start-line="0" selection-start-column="0" selection-end-line="0" selection-end-column="0" />
           <folding>
-            <element signature="e#0#41#0" expanded="true" />
+            <element signature="e#0#41#0" expanded="false" />
           </folding>
         </state>
       </provider>
@@ -579,7 +561,7 @@
         <state relative-caret-position="-549">
           <caret line="0" column="0" lean-forward="false" selection-start-line="0" selection-start-column="0" selection-end-line="0" selection-end-column="0" />
           <folding>
-            <element signature="e#0#26#0" expanded="true" />
+            <element signature="e#0#26#0" expanded="false" />
           </folding>
         </state>
       </provider>
@@ -616,22 +598,12 @@
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/src/components/Selectbox.js">
+    <entry file="file://$PROJECT_DIR$/src/components/shelf/Shelf.js">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="131">
-          <caret line="12" column="21" lean-forward="true" selection-start-line="12" selection-start-column="21" selection-end-line="12" selection-end-column="21" />
+        <state relative-caret-position="1360">
+          <caret line="80" column="27" lean-forward="true" selection-start-line="80" selection-start-column="27" selection-end-line="80" selection-end-column="27" />
           <folding>
-            <element signature="e#0#41#0" expanded="true" />
-          </folding>
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/src/components/shelf/Sort.js">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="225">
-          <caret line="36" column="3" lean-forward="false" selection-start-line="36" selection-start-column="3" selection-end-line="36" selection-end-column="3" />
-          <folding>
-            <element signature="e#0#41#0" expanded="true" />
+            <element signature="e#0#39#0" expanded="true" />
           </folding>
         </state>
       </provider>
@@ -646,20 +618,30 @@
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/src/components/shelf/CurrencySelect.js">
+    <entry file="file://$PROJECT_DIR$/src/components/Selectbox.js">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="225">
-          <caret line="31" column="28" lean-forward="false" selection-start-line="31" selection-start-column="28" selection-end-line="31" selection-end-column="28" />
+        <state relative-caret-position="102">
+          <caret line="12" column="23" lean-forward="true" selection-start-line="12" selection-start-column="23" selection-end-line="12" selection-end-column="23" />
           <folding>
             <element signature="e#0#39#0" expanded="true" />
           </folding>
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/src/components/shelf/Shelf.js">
+    <entry file="file://$PROJECT_DIR$/src/components/shelf/Sort.js">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="1360">
-          <caret line="80" column="27" lean-forward="true" selection-start-line="80" selection-start-column="27" selection-end-line="80" selection-end-column="27" />
+        <state relative-caret-position="225">
+          <caret line="21" column="12" lean-forward="true" selection-start-line="21" selection-start-column="12" selection-end-line="21" selection-end-column="12" />
+          <folding>
+            <element signature="e#0#41#0" expanded="true" />
+          </folding>
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/components/shelf/CurrencySelect.js">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="306">
+          <caret line="19" column="5" lean-forward="false" selection-start-line="19" selection-start-column="5" selection-end-line="19" selection-end-column="5" />
           <folding>
             <element signature="e#0#39#0" expanded="true" />
           </folding>

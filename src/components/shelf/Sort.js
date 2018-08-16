@@ -34,7 +34,7 @@ Sort.propTypes = {
 }
 
 const mapStateToProps = state => ({
- // sort: state.sort.item,
+  sort: state.sort.item,
 })
 
 export default connect(mapStateToProps, { updateSort })(Sort);

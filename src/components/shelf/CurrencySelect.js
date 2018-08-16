@@ -13,11 +13,16 @@ const currencyList = [
     {value: 'YUAN', label: '¥ YUAN'},
 ]
 
+
 class CurrencySelect extends Component {
+    handleCurrency = (value) => {
+        this.props.updateCurrency(value);
+    }
+
     render() {
         return (
             <div className="sort">
-                Currency <Selectbox options={currencyList}/>
+                Currency <Selectbox options={currencyList} handleOnChange={this.handleCurrency}/>
             </div>
         );
     }
@@ -25,7 +30,7 @@ class CurrencySelect extends Component {
 
 CurrencySelect.propTypes = {
     updateCurrency: PropTypes.func.isRequired,
-    currency: PropTypes.string.isRequired,
+    //currency: PropTypes.string.isRequired,
 }
 
 const mapStateToProps = state => ({
