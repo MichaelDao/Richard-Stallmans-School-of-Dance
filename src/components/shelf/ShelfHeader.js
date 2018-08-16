@@ -13,6 +13,7 @@ const ShelfHeader = (props) => {
             <small className="products-found">
                 <span>{props.productsLength} Product(s) found.</span>
             </small>
+
             <CurrencySelect/>
             <Sort/>
             <Clearfix/>
