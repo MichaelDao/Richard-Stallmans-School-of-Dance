@@ -32,20 +32,7 @@ export const fetchProducts = (filters, sortBy, callback) => dispatch => {
       let genderFilters = [];
       let sizeFilters = [];
       let colorFilters = [];
-
-      //Extract gender filters from filters array
-      // if (!!filters && filters.length > 0) {
-      //     let mFilter = filters.indexOf('Male');
-      //     if (mFilter > -1) {
-      //         filters.splice(mFilter, 1);
-      //         genderFilters.push('Male');
-      //     }
-      //     let fFilter = filters.indexOf('Female');
-      //     if (fFilter > -1) {
-      //         filters.splice(fFilter, 1);
-      //         genderFilters.push('Female');
-      //     }
-      // }
+      let priceFilter = 100;
 
       if (!!filters) {
           for (let i = 0; i < filters.length; i++) {
@@ -56,16 +43,11 @@ export const fetchProducts = (filters, sortBy, callback) => dispatch => {
                   colorFilters.push(filt.substring(2));
               } else if (filt.substring(0,2) == 'G_') {
                   genderFilters.push(filt.substring(2));
+              } else if (filt.substring(0,2) == 'P_') {
+                  priceFilter = Number(filt.substring(2));
               }
           }
       }
-
-
-      // console.log("SIZES");
-      // console.log(sizeFilters);
-      //
-      // console.log("PRODUCTS");
-      // console.log(products);
 
       //Re-check array length and apply size filters
       if(!!sizeFilters && sizeFilters.length > 0) {
@@ -92,6 +74,13 @@ export const fetchProducts = (filters, sortBy, callback) => dispatch => {
                       return (color == f);
                   })
               })
+          });
+      }
+
+      //Apply price filter
+      if (!!priceFilter && priceFilter < 100) {
+          products = products.filter(function (p) {
+              return (p.price < priceFilter);
           });
       }
 

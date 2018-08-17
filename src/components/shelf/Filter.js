@@ -6,20 +6,21 @@ import { connect } from "react-redux";
 import { updateFilters } from '../../store/actions/filterActions';
 
 import Checkbox from '../Checkbox';
+import PriceSlider from '../PriceSlider';
 
 const availableSizes = [
-  'XS',
-  'S',
-  'M',
-  'ML',
-  'L',
-  'XL',
-  'XXL',
+    'XS',
+    'S',
+    'M',
+    'ML',
+    'L',
+    'XL',
+    'XXL',
 ];
 
 const availableGenders = [
-  'Male',
-  'Female',
+    'Male',
+    'Female',
 ];
 
 const availableColors = [
@@ -34,116 +35,129 @@ const availableColors = [
 
 class Filter extends Component {
 
-  componentWillMount() {
-    this.selectedCheckboxes = new Set();
-    this.selectedGenderboxes = new Set();
-    this.selectedColorboxes = new Set();
+    componentWillMount() {
+        this.price = 100;
 
-  }
+        this.selectedCheckboxes = new Set();
+        this.selectedGenderboxes = new Set();
+        this.selectedColorboxes = new Set();
 
-  getFilterArray() {
-      let array = [];
+    }
 
-      let selectedSizes = Array.from(this.selectedCheckboxes, x => "S_" + x);
-      let selectedGenders = Array.from(this.selectedGenderboxes, x => "G_" + x);
-      let selectedColors = Array.from(this.selectedColorboxes, x => "C_" + x);
+    getFilterArray() {
+        let array = [];
 
-      return array.concat(selectedSizes)
+        let selectedSizes = Array.from(this.selectedCheckboxes, x => "S_" + x);
+        let selectedGenders = Array.from(this.selectedGenderboxes, x => "G_" + x);
+        let selectedColors = Array.from(this.selectedColorboxes, x => "C_" + x);
+
+        array.push("P_" + this.price);
+
+        return array.concat(selectedSizes)
         .concat(selectedGenders)
         .concat(selectedColors);
-  }
-
-  toggleCheckbox = (label) => {
-    if (this.selectedCheckboxes.has(label)) {
-      this.selectedCheckboxes.delete(label);
-  } else {
-      this.selectedCheckboxes.add(label);
     }
 
-    this.props.updateFilters(this.getFilterArray());
-
-  }
-
-  toggleGenderbox = (label) => {
-    if (this.selectedGenderboxes.has(label)) {
-      this.selectedGenderboxes.delete(label);
-  } else {
-      this.selectedGenderboxes.add(label);
+    updateMaxPrice = (value) => {
+        this.price = value;
+        this.props.updateFilters(this.getFilterArray());
     }
 
-    this.props.updateFilters(this.getFilterArray());
-  }
+    toggleCheckbox = (label) => {
+        if (this.selectedCheckboxes.has(label)) {
+            this.selectedCheckboxes.delete(label);
+        } else {
+            this.selectedCheckboxes.add(label);
+        }
 
-  toggleColorbox = (label) => {
-    if (this.selectedColorboxes.has(label)) {
-      this.selectedColorboxes.delete(label);
-  } else {
-      this.selectedColorboxes.add(label);
+        this.props.updateFilters(this.getFilterArray());
+
     }
 
-    this.props.updateFilters(this.getFilterArray());
-  }
+    toggleGenderbox = (label) => {
+        if (this.selectedGenderboxes.has(label)) {
+            this.selectedGenderboxes.delete(label);
+        } else {
+            this.selectedGenderboxes.add(label);
+        }
+
+        this.props.updateFilters(this.getFilterArray());
+    }
+
+    toggleColorbox = (label) => {
+        if (this.selectedColorboxes.has(label)) {
+            this.selectedColorboxes.delete(label);
+        } else {
+            this.selectedColorboxes.add(label);
+        }
+
+        this.props.updateFilters(this.getFilterArray());
+    }
 
 
-  createCheckbox = (label) => (
-    <Checkbox
+    createCheckbox = (label) => (
+        <Checkbox
         classes="filters-available-size"
         label={label}
         handleCheckboxChange={this.toggleCheckbox}
         key={label}
-    />
-  )
-  createGenderbox = (label) => (
-    <Checkbox
+        />
+    )
+    createGenderbox = (label) => (
+        <Checkbox
         classes="filters-available-gender"
         label={label}
         handleCheckboxChange={this.toggleGenderbox}
         key={label}
-    />
-  )
+        />
+    )
 
-  createColorbox = (label) => (
-      <Checkbox
-          classes="filters-available-size"
-          label={label}
-          handleCheckboxChange={this.toggleColorbox}
-          key={label}
-      />
-  )
+    createColorbox = (label) => (
+        <Checkbox
+        classes="filters-available-size"
+        label={label}
+        handleCheckboxChange={this.toggleColorbox}
+        key={label}
+        />
+    )
 
-  createCheckboxes = () => (
-    availableSizes.map(this.createCheckbox)
-  )
+    createCheckboxes = () => (
+        availableSizes.map(this.createCheckbox)
+    )
 
-  createGenderboxes = () => (
-      availableGenders.map(this.createGenderbox)
-  )
+    createGenderboxes = () => (
+        availableGenders.map(this.createGenderbox)
+    )
 
-  createColorboxes = () => (
-      availableColors.map(this.createColorbox)
-  )
+    createColorboxes = () => (
+        availableColors.map(this.createColorbox)
+    )
 
-  render() {
-    return (
-      <div className="filters">
-        <h4 className="title">Sizes:</h4>
-        {this.createCheckboxes()}
-        <h4 className="title">Genders:</h4>
-        {this.createGenderboxes()}
-        <h4 className="title">Colors:</h4>
-        {this.createColorboxes()}
-      </div>
-    );
-  }
+    render() {
+        let price = this.price
+
+        return (
+            <div className="filters">
+            <h4 className="title">Sizes:</h4>
+            {this.createCheckboxes()}
+            <h4 className="title">Genders:</h4>
+            {this.createGenderboxes()}
+            <h4 className="title">Colors:</h4>
+            {this.createColorboxes()}
+            <h4 className="title">Price:</h4>
+            <PriceSlider handlePrice = {this.updateMaxPrice}/>
+            </div>
+        );
+    }
 }
 
 Filter.propTypes = {
-  updateFilters: PropTypes.func.isRequired,
-  filters: PropTypes.array,
+    updateFilters: PropTypes.func.isRequired,
+    filters: PropTypes.array,
 }
 
 const mapStateToProps = state => ({
-  filters: state.filters.items,
+    filters: state.filters.items,
 })
 
 export default connect(mapStateToProps, { updateFilters })(Filter);
