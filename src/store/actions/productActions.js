@@ -50,11 +50,11 @@ export const fetchProducts = (filters, sortBy, callback) => dispatch => {
       if (!!filters) {
           for (let i = 0; i < filters.length; i++) {
               let filt = filters[i];
-              if (filt.substring(0,2) == 'S_') {
+              if (filt.substring(0,2) === 'S_') {
                   sizeFilters.push(filt.substring(2));
-              } else if (filt.substring(0,2) == 'C_') {
+              } else if (filt.substring(0,2) === 'C_') {
                   colorFilters.push(filt.substring(2));
-              } else if (filt.substring(0,2) == 'G_') {
+              } else if (filt.substring(0,2) === 'G_') {
                   genderFilters.push(filt.substring(2));
               }
           }
@@ -78,7 +78,7 @@ export const fetchProducts = (filters, sortBy, callback) => dispatch => {
           products = products.filter(function (p) {
               return genderFilters.find(function (f) {
                   return p.availableGenders.find(function(gender) {
-                      return (gender == f);
+                      return (gender === f);
                   })
               })
           });
@@ -89,7 +89,7 @@ export const fetchProducts = (filters, sortBy, callback) => dispatch => {
           products = products.filter(function (p) {
               return colorFilters.find(function (f) {
                   return p.availableColors.find(function(color) {
-                      return (color == f);
+                      return (color === f);
                   })
               })
           });

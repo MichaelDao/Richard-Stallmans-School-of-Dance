@@ -1,11 +1,9 @@
-import { UPDATE_CURRENCY } from './types';
-
+import {UPDATE_CURRENCY} from './types';
 
 export const updateCurrency = (currency) => dispatch => {
 
-  dispatch({
-    type: UPDATE_CURRENCY,
-    payload: currency,
-  });
-
+    dispatch({
+        type: UPDATE_CURRENCY,
+        payload: currency,
+    });
 }

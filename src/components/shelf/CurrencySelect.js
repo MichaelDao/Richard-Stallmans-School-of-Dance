@@ -11,12 +11,13 @@ const currencyList = [
     {value: 'AUD', label: '$ AUD'},
     {value: 'USD', label: '$ USD'},
     {value: 'YUAN', label: '¥ YUAN'},
-]
+];
 
 class CurrencySelect extends Component {
     handleCurrency = (value) => {
+        console.log(value); // debug
         this.props.updateCurrency(value);
-    }
+    };
 
     render() {
         return (
@@ -28,11 +29,12 @@ class CurrencySelect extends Component {
 }
 
 CurrencySelect.propTypes = {
-    updateCurrency: PropTypes.string.isRequired,
-}
+    updateCurrency: PropTypes.func.isRequired,
+    currency: PropTypes.string.isRequired,
+};
 
 const mapStateToProps = state => ({
-    updateCurrency: state.updateCurrency,
-})
+    currency: state.currency.item,
+});
 
 export default connect(mapStateToProps, {updateCurrency})(CurrencySelect);

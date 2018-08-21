@@ -1,6 +1,5 @@
 import { UPDATE_CURRENCY } from '../actions/types';
 
-
 const initialState = {
   item: '',
 };
