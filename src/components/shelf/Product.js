@@ -12,8 +12,6 @@ const Product = (props) => {
     // Um componente de input pode alterar a quantidade no futuro
     product.quantity = 1;
 
-    // JUST printing OUT PRODUCT INFO - MICHAEL
-    console.log(product);
 
     // 1.37 Australian Dollar == 1 US Dollar (this is a retarded way sorry lol)
     let formattedPrice = util.formatPrice(product.price * 1.37, product.currencyId);

@@ -15,7 +15,6 @@ const currencyList = [
 
 class CurrencySelect extends Component {
     handleCurrency = (value) => {
-        console.log(value); // debug
         this.props.updateCurrency(value);
     };
 

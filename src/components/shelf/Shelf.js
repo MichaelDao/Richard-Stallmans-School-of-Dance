@@ -79,14 +79,14 @@ Shelf.propTypes = {
     addProduct: PropTypes.func.isRequired,
     filters: PropTypes.array,
     sort: PropTypes.string,
-    // currency: PropTypes.string,
+    currency: PropTypes.string,
 }
 
 const mapStateToProps = state => ({
     products: state.products.items,
     filters: state.filters.items,
     sort: state.sort.item,
-    //currency: state.currency,
+    currency: state.item,
 })
 
 export default connect(mapStateToProps, {fetchProducts, addProduct})(Shelf);

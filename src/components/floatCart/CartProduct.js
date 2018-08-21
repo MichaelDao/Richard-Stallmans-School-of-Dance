@@ -4,7 +4,7 @@ import PropTypes from "prop-types";
 import Thumb from "./../Thumb";
 
 import util from '../../util';
-
+import CurrencySelect from '../shelf/CurrencySelect'
 
 class CartProduct extends Component {
 
@@ -50,8 +50,10 @@ class CartProduct extends Component {
             Quantity: {product.quantity}
           </p>
         </div>
+
+          {/* TRY TO FIGURE OUT HOW TO GET THE STATE FOR CURRENCY */}
         <div className="shelf-item__price">
-          <p>{`${product.currencyFormat}  ${util.formatPrice(product.price)}`}</p>
+          <p>{`  ${util.formatPrice(product.price)}`}</p>
         </div>
 
         <div className="clearfix" />

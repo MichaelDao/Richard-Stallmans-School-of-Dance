@@ -1,17 +1,17 @@
-import { UPDATE_CURRENCY } from '../actions/types';
+import {UPDATE_CURRENCY} from '../actions/types';
 
 const initialState = {
-  item: '',
+    item: '',
 };
 
-export default function(state = initialState, action) {
-  switch (action.type) {
-    case UPDATE_CURRENCY:
-      return {
-        ...state,
-        item: action.payload
-      };
-    default:
-      return state;
-  }
+export default function (state = initialState, action) {
+    switch (action.type) {
+        case UPDATE_CURRENCY:
+            return {
+                ...state,
+                item: action.payload
+            };
+        default:
+            return state;
+    }
 }

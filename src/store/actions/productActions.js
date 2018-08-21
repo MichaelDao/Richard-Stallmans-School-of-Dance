@@ -60,7 +60,6 @@ export const fetchProducts = (filters, sortBy, callback) => dispatch => {
           }
       }
 
-
       // console.log("SIZES");
       // console.log(sizeFilters);
       //
@@ -94,7 +93,6 @@ export const fetchProducts = (filters, sortBy, callback) => dispatch => {
               })
           });
       }
-
 
       if(!!sortBy){
         products = products.sort(compare[sortBy]);
