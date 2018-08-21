@@ -13,7 +13,6 @@ const currencyList = [
     {value: 'YUAN', label: '¥ YUAN'},
 ]
 
-
 class CurrencySelect extends Component {
     handleCurrency = (value) => {
         this.props.updateCurrency(value);
@@ -29,12 +28,11 @@ class CurrencySelect extends Component {
 }
 
 CurrencySelect.propTypes = {
-    updateCurrency: PropTypes.func.isRequired,
-    //currency: PropTypes.string.isRequired,
+    updateCurrency: PropTypes.string.isRequired,
 }
 
 const mapStateToProps = state => ({
-    currency: state.currency,
+    updateCurrency: state.updateCurrency,
 })
 
 export default connect(mapStateToProps, {updateCurrency})(CurrencySelect);

@@ -5,7 +5,6 @@ import Thumb from '../Thumb';
 
 import util from '../../util';
 
-
 const Product = (props) => {
     const product = props.product;
 
@@ -13,16 +12,17 @@ const Product = (props) => {
     // Um componente de input pode alterar a quantidade no futuro
     product.quantity = 1;
 
-    // JUST FIGURING OUT PRODUCT INFO - MICHAEL
-    console.log(product);
+    // JUST printing OUT PRODUCT INFO - MICHAEL
+    //console.log(product);
 
     // 1.37 Australian Dollar == 1 US Dollar (this is a retarded way sorry lol)
-    let formattedPrice = util.formatPrice(product.price*1.37, product.currencyId);
+    let formattedPrice = util.formatPrice(product.price * 1.37, product.currencyId);
 
     let productInstallment;
 
+
     if (product.installments) {
-        const installmentPrice = (product.price*1.37 / product.installments);
+        const installmentPrice = (product.price * 1.37 / product.installments);
 
         productInstallment = (
             <div className="installment">
