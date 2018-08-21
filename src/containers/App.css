@@ -200,7 +200,9 @@ footer {
         content: " 🔥"
       }
     .shelf-container .shelf-item__thumb img {
-      width: 100%; }
+      height: 300px;
+      width: 100%; 
+    }
     .shelf-container .shelf-item__title {
       position: relative;
       padding: 0 20px;
