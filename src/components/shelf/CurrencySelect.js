@@ -29,11 +29,13 @@ class CurrencySelect extends Component {
 
 CurrencySelect.propTypes = {
     updateCurrency: PropTypes.func.isRequired,
-    currency: PropTypes.string.isRequired,
+    currencyType: PropTypes.string.isRequired,
 };
 
-const mapStateToProps = state => ({
-    currency: state.currency.item,
-});
+function mapStateToProps(state) {
+    return {
+        currencyType: state.currencyType.item,
+    };
+}
 
 export default connect(mapStateToProps, {updateCurrency})(CurrencySelect);

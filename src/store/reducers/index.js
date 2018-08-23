@@ -13,5 +13,5 @@ export default combineReducers({
     cartTotals: updateCartReducer,
     filters: filterReducer,
     sort: sortReducer,
-    currency: currencyReducer,
+    currencyType: currencyReducer,
 });

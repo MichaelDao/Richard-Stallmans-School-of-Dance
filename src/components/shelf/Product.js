@@ -5,27 +5,27 @@ import Thumb from '../Thumb';
 
 import util from '../../util';
 
+
 const Product = (props) => {
     const product = props.product;
 
+   // console.log(this.props.currencyType)
     // An input component may change the quantity in the future
     // Um componente de input pode alterar a quantidade no futuro
     product.quantity = 1;
 
-
     // 1.37 Australian Dollar == 1 US Dollar (this is a retarded way sorry lol)
-    let formattedPrice = util.formatPrice(product.price * 1.37, product.currencyId);
+    let formattedPrice = util.formatPrice(product.price, product.currencyId);
 
     let productInstallment;
 
-
     if (product.installments) {
-        const installmentPrice = (product.price * 1.37 / product.installments);
+        const installmentPrice = (product.price / product.installments);
 
         productInstallment = (
             <div className="installment">
                 <span>or {product.installments}
-                    x</span><b> {product.currencyFormat} {util.formatPrice(installmentPrice, product.currencyId)}</b>
+                    </span><b> {product.currencyFormat} {util.formatPrice(installmentPrice, product.currencyId)}</b>
             </div>
         );
     }
@@ -57,8 +57,7 @@ const Product = (props) => {
             <div onClick={() => props.addProduct(product)} className="shelf-item__buy-btn">Add to cart</div>
         </div>
     );
-}
-
+};
 
 Product.propTypes = {
     product: PropTypes.object.isRequired,

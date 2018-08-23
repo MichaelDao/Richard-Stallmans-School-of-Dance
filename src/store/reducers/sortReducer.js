@@ -1,18 +1,18 @@
-import { UPDATE_SORT } from '../actions/types';
+import {UPDATE_SORT} from '../actions/types';
 
 
 const initialState = {
-  item: '',
+    item: '',
 };
 
-export default function(state = initialState, action) {
-  switch (action.type) {
-    case UPDATE_SORT:
-      return {
-        ...state,
-        item: action.payload
-      };
-    default:
-      return state;
-  }
+export default function (state = initialState, action) {
+    switch (action.type) {
+        case UPDATE_SORT:
+            return {
+                ...state,
+                item: action.payload
+            };
+        default:
+            return state;
+    }
 }

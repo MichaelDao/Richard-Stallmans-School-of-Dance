@@ -35,8 +35,7 @@ class Shelf extends Component {
         }
     }
 
-    // trying to modify this bit for the currency
-    handleFetchProducts = (filters = this.props.filters, sort = this.props.sort, currency = this.props.currency,) => {
+    handleFetchProducts = (filters = this.props.filters, sort = this.props.sort,) => {
         this.setState({loading: true});
         this.props.fetchProducts(filters, sort, () => {
             this.setState({loading: false});
@@ -45,6 +44,8 @@ class Shelf extends Component {
 
     render() {
         const {products} = this.props;
+
+        console.log('hello'+this.props.currencyType)
 
         const p = products.map(p => {
             return (
@@ -79,14 +80,14 @@ Shelf.propTypes = {
     addProduct: PropTypes.func.isRequired,
     filters: PropTypes.array,
     sort: PropTypes.string,
-    currency: PropTypes.string,
+    currencyType: PropTypes.string,
 }
 
 const mapStateToProps = state => ({
     products: state.products.items,
     filters: state.filters.items,
     sort: state.sort.item,
-    currency: state.item,
+    currencyType: state.currencyType.item,
 })
 
 export default connect(mapStateToProps, {fetchProducts, addProduct})(Shelf);
