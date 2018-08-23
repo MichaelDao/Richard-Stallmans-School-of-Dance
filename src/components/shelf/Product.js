@@ -37,6 +37,7 @@ const Product = (props) => {
         alt={product.title}
       />
       <p className="shelf-item__title">{product.title}</p>
+      <p className="shelf-item__description">{product.description}</p>
       <div className="shelf-item__price">
         <div className="val"><small>{product.currencyFormat}</small>
           <b>

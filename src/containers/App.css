@@ -1,4 +1,6 @@
 @import url("https://fonts.googleapis.com/css?family=Roboto");
+@import url('https://fonts.googleapis.com/css?family=Open+Sans');
+
 body {
   margin: 0;
   color: #1b1a20;
@@ -186,12 +188,14 @@ footer {
     .shelf-container .shelf-item:hover {
       border: 1px solid #eee; }
       .shelf-container .shelf-item:hover .shelf-item__buy-btn {
-        background-color: #DC241F; }
+        background-color: rgb(247,228,151); }
     .shelf-container .shelf-item .shelf-stopper {
+      font-family: 'Open Sans', sans-serif;
       border-radius: 8px;
-      color: #DC241F;
+      color: #D68189;
+      font-weight: bolder;
       padding-bottom: 20px;
-      font-size: 1em;
+      font-size: 1.2em;
       cursor: default; }
       .shelf-stopper::before {
         content: "🛒 "
@@ -199,23 +203,34 @@ footer {
       .shelf-stopper::after {
         content: " 🔥"
       }
+      .shelf-item:hover .shelf-stopper {
+        color: #E94E77;
+      }
+      
     .shelf-container .shelf-item__thumb img {
       height: 300px;
       width: 100%; 
     }
+    .shelf-container .shelf-item__description {
+      font-family: 'Open Sans', sans-serif;
+      padding-bottom: 10px;
+      color: #74B89F;
+      height: 75px;
+      padding-top: 25px;
+      padding-bottom: 25px;
+    }
+
+    .shelf-item:hover .shelf-item__description {
+      color: #3B8686;
+    }
+
     .shelf-container .shelf-item__title {
       position: relative;
       padding: 0 20px;
-      height: 45px; }
-      .shelf-container .shelf-item__title::before {
-        content: '';
-        width: 20px;
-        height: 2px;
-        background-color: #DC241F;
-        position: absolute;
-        bottom: 0;
-        left: 50%;
-        margin-left: -10px; }
+      height: 45px;
+      font-size: 1.5rem;
+      color: #50434D;
+    }
     .shelf-container .shelf-item__price {
       height: 60px; }
       .shelf-container .shelf-item__price .val b {
@@ -224,7 +239,7 @@ footer {
       .shelf-container .shelf-item__price .installment {
         color: #9c9b9b; }
     .shelf-container .shelf-item__buy-btn {
-      background-color: rgb(165, 19, 14);
+      background-color: #D2505A;
       border-radius: 15px;
       color: #fff;
       padding: 15px 0;
