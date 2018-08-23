@@ -7,25 +7,35 @@ import util from '../../util';
 
 class CartProduct extends Component {
 
+
     state = {
         isMouseOver: false,
-    }
+    };
 
     handleMouseOver = () => {
         this.setState({isMouseOver: true});
-    }
+    };
 
     handleMouseOut = () => {
         this.setState({isMouseOver: false});
-    }
+    };
 
 
     render() {
-        const {product, removeProduct} = this.props;
+        const {product, removeProduct, currencyType} = this.props;
+
+        const currencySymbol = (id) => {
+            if (id === 'YUAN') {
+                return '¥';
+            }
+            else {
+                return '$';
+            }
+        };
 
         const classes = ['shelf-item'];
 
-        if (!!this.state.isMouseOver) {
+        if (this.state.isMouseOver) {
             classes.push('shelf-item--mouseover');
         }
 
@@ -50,9 +60,8 @@ class CartProduct extends Component {
                     </p>
                 </div>
 
-                {/* TRY TO FIGURE OUT HOW TO GET THE STATE FOR CURRENCY */}
                 <div className="shelf-item__price">
-                    <p>{`  ${util.formatPrice(product.price)}`}</p>
+                    <p>{`${currencySymbol(currencyType)} ${util.formatPrice(product.price, currencyType)}`}</p>
                 </div>
 
                 <div className="clearfix"/>
@@ -61,10 +70,10 @@ class CartProduct extends Component {
     }
 }
 
-
 CartProduct.propTypes = {
     product: PropTypes.object.isRequired,
     removeProduct: PropTypes.func.isRequired,
+    currencyType: PropTypes.string,
 };
 
 export default CartProduct;

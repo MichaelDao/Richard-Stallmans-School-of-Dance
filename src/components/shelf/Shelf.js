@@ -45,7 +45,7 @@ class Shelf extends Component {
     render() {
         const {products} = this.props;
 
-        console.log('hello'+this.props.currencyType)
+        //console.log('hello'+this.props.currencyType)
 
         const p = products.map(p => {
             return (
@@ -53,6 +53,7 @@ class Shelf extends Component {
                     product={p}
                     addProduct={this.props.addProduct}
                     key={p.id}
+                    currencyType={this.props.currencyType}
                 />
             );
         });

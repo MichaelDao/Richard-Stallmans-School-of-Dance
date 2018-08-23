@@ -5,17 +5,27 @@ import Thumb from '../Thumb';
 
 import util from '../../util';
 
-
 const Product = (props) => {
     const product = props.product;
 
-   // console.log(this.props.currencyType)
+    // Define the currency conversion -- michael
+    const currency = props.currencyType;
+
+    const currencySymbol = (id) => {
+        if (id === 'YUAN') {
+            return '¥';
+        }
+        else {
+            return '$';
+        }
+    };
+
     // An input component may change the quantity in the future
     // Um componente de input pode alterar a quantidade no futuro
     product.quantity = 1;
 
     // 1.37 Australian Dollar == 1 US Dollar (this is a retarded way sorry lol)
-    let formattedPrice = util.formatPrice(product.price, product.currencyId);
+    let formattedPrice = util.formatPrice(product.price, currency);
 
     let productInstallment;
 
@@ -25,7 +35,7 @@ const Product = (props) => {
         productInstallment = (
             <div className="installment">
                 <span>or {product.installments}
-                    </span><b> {product.currencyFormat} {util.formatPrice(installmentPrice, product.currencyId)}</b>
+                    </span><b> {currencySymbol(currency)} {formattedPrice}</b>
             </div>
         );
     }
@@ -46,7 +56,7 @@ const Product = (props) => {
             <div className="shelf-item__price">
                 <div className="val">
                     {/* This is the symbol */}
-                    <a>{product.currencyFormat}</a>
+                    <a>{currencySymbol(currency)}</a>
                     {/* Individual price */}
                     <b>{formattedPrice.substr(0, formattedPrice.length - 3)}</b>
                     {/* bulk price */}
@@ -65,3 +75,4 @@ Product.propTypes = {
 };
 
 export default Product;
+
