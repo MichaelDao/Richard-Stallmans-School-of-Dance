@@ -23,8 +23,6 @@ const compare = {
 }
 
 export const fetchProducts = (filters, sortBy, callback) => dispatch => {
-    //console.log(filters);
-
     axios.get(productsAPI)
         .then(res => {
             let {products} = res.data;
@@ -112,4 +110,4 @@ export const fetchProducts = (filters, sortBy, callback) => dispatch => {
             console.log(err);
             throw new Error('Could not fetch products. Try again later.');
         });
-}
+};
