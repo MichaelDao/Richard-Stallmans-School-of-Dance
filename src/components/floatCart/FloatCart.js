@@ -11,6 +11,7 @@ import persistentCart from "../../persistentCart";
 
 import util from '../../util';
 
+import Paypal from '../Paypal';
 
 class FloatCart extends Component {
 
@@ -79,7 +80,8 @@ class FloatCart extends Component {
         const {totalPrice, productQuantity, currencyFormat, currencyId} = this.props.cartTotals;
 
         if (!productQuantity) {
-            alert("Add some product in the bag!");
+
+            alert("Add an item to the cart first!");
         } else {
             alert(`Checkout - Subtotal: ${currencyFormat} ${util.formatPrice(totalPrice, currencyId)}`);
         }
@@ -101,7 +103,7 @@ class FloatCart extends Component {
 
         let classes = ['float-cart'];
 
-        if (!!this.state.isOpen) {
+        if (this.state.isOpen) {
             classes.push('float-cart--open');
         }
 
@@ -118,39 +120,34 @@ class FloatCart extends Component {
             <div className={classes.join(' ')}>
                 {/* If cart open, show close (x) button */}
                 {this.state.isOpen && (
-                    <div
-                        onClick={() => this.closeFloatCart()}
-                        className="float-cart__close-btn"
-                    >
+                    <div onClick={() => this.closeFloatCart()} className="float-cart__close-btn">
                         X
                     </div>
                 )}
 
                 {/* If cart is closed, show bag with quantity of product and open cart action */}
                 {!this.state.isOpen && (
-                    <span
-                        onClick={() => this.openFloatCart()}
-                        className="bag bag--float-cart-closed"
-                    >
-            <span className="bag__quantity">{cartTotals.productQuantity}</span>
-          </span>
+                    <span onClick={() => this.openFloatCart()} className="bag bag--float-cart-closed">
+                        <span className="bag__quantity">{cartTotals.productQuantity}</span>
+                    </span>
                 )}
 
                 <div className="float-cart__content">
+
                     <div className="float-cart__header">
-            <span className="bag">
-              <span className="bag__quantity">
-                {cartTotals.productQuantity}
-              </span>
-            </span>
-                        <span className="header-title">Bag</span>
+                        <span className="bag">
+                            <span className="bag__quantity">
+                                {cartTotals.productQuantity}
+                            </span>
+                        </span>
+                        <span className="header-title">Shopping Bag</span>
                     </div>
 
                     <div className="float-cart__shelf-container">
                         {products}
                         {!products.length && (
                             <p className="shelf-empty">
-                                Add some product in the bag <br/>:)
+                                This is your shopping bag!<br/>
                             </p>
                         )}
                     </div>
@@ -163,15 +160,17 @@ class FloatCart extends Component {
                             </p>
                             <small className="sub-price__installment">
                                 {!!cartTotals.installments && (
-                                    <span>
-                    {`OR UP TO ${cartTotals.installments} x ${currencySymbol(currencyType)} ${util.formatPrice(cartTotals.totalPrice / cartTotals.installments, currencyType)}`}
-                  </span>
+                                    <span>{`OR UP TO ${cartTotals.installments} x ${currencySymbol(currencyType)} ${util.formatPrice(cartTotals.totalPrice / cartTotals.installments, currencyType)}`}</span>
                                 )}
                             </small>
                         </div>
+
+                        <Paypal/>
+
+                        {/*
                         <div onClick={() => this.proceedToCheckout()} className="buy-btn">
                             Checkout
-                        </div>
+                        </div>*/}
                     </div>
                 </div>
             </div>

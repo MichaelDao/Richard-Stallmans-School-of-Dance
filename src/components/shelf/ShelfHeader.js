@@ -5,7 +5,6 @@ import CurrencySelect from './CurrencySelect';
 import Sort from './Sort';
 import Clearfix from '../Clearfix';
 
-
 const ShelfHeader = (props) => {
 
     return (
@@ -17,6 +16,7 @@ const ShelfHeader = (props) => {
             <br/><br/>
             <CurrencySelect/>
             <Clearfix/>
+
         </div>
     );
 }
