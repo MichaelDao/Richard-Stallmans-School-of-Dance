@@ -5,9 +5,6 @@ import CurrencySelect from './CurrencySelect';
 import Sort from './Sort';
 import Clearfix from '../Clearfix';
 
-import Popup from '../floatCart/CheckoutPopup';
-import Paypal from '../Paypal';
-
 const ShelfHeader = (props) => {
 
     return (
@@ -16,7 +13,6 @@ const ShelfHeader = (props) => {
                 <span>{props.productsLength} Product(s) found.</span>
             </small>
             <Sort/>
-            <Popup/>
             <br/><br/>
             <CurrencySelect/>
             <Clearfix/>

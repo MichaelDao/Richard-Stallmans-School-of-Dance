@@ -12,6 +12,7 @@ import persistentCart from "../../persistentCart";
 import util from '../../util';
 
 import Paypal from '../Paypal';
+
 class FloatCart extends Component {
 
     state = {
@@ -102,7 +103,7 @@ class FloatCart extends Component {
 
         let classes = ['float-cart'];
 
-        if (!!this.state.isOpen) {
+        if (this.state.isOpen) {
             classes.push('float-cart--open');
         }
 
@@ -165,6 +166,7 @@ class FloatCart extends Component {
                         </div>
 
                         <Paypal/>
+
                         {/*
                         <div onClick={() => this.proceedToCheckout()} className="buy-btn">
                             Checkout
