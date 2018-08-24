@@ -30,7 +30,7 @@ const Product = (props) => {
     let productInstallment;
 
     if (product.installments) {
-        const installmentPrice = (product.price / product.installments);
+        //const installmentPrice = (product.price / product.installments);
 
         productInstallment = (
             <div className="installment">

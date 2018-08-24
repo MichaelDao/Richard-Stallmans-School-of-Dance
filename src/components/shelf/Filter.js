@@ -134,7 +134,7 @@ class Filter extends Component {
     )
 
     render() {
-        let price = this.price
+        //let price = this.price
 
         return (
             <div className="filters">
