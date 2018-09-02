@@ -11,9 +11,12 @@ import persistentCart from "../../persistentCart";
 
 import util from '../../util';
 
+import GoogleLogin from '../GoogleLogin';
+import FacebookLogin from '../FacebookLogin';
+
 
 class FloatCart extends Component {
-  
+
   state = {
     isOpen: false,
   };
@@ -162,6 +165,8 @@ class FloatCart extends Component {
             <div onClick={() => this.proceedToCheckout()} className="buy-btn">
               Checkout
             </div>
+            < GoogleLogin />
+          < FacebookLogin />
           </div>
         </div>
       </div>
@@ -186,4 +191,3 @@ const mapStateToProps = state => ({
 });
 
 export default connect(mapStateToProps, { loadCart, updateCart, removeProduct})(FloatCart);
-
