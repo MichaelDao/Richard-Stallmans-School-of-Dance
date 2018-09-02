@@ -1,7 +1,7 @@
-import React, { Component } from 'react';
+import React, {Component} from 'react';
 import './App.css';
 
-import { Provider } from 'react-redux';
+import {Provider} from 'react-redux';
 
 
 import Shelf from '../components/shelf/Shelf';
@@ -13,20 +13,20 @@ import Corner from '../components/rmitLogo/Corner';
 
 
 class App extends Component {
-  render() {
-    return (
-      <Provider store={store}>
-        <div className="App">
-          <Corner />
-          <main>
-            <Shelf />
-          </main>
-          <Footer />
-          <FloatCart />
-        </div>
-      </Provider>
-    )
-  }
+    render() {
+        return (
+            <Provider store={store}>
+                <div className="App">
+                    <Corner/>
+                    <main>
+                        <Shelf/>
+                    </main>
+                    <Footer/>
+                    <FloatCart/>
+                </div>
+            </Provider>
+        )
+    }
 }
 
 export default App;

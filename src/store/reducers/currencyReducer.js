@@ -1,13 +1,12 @@
-import {UPDATE_SORT} from '../actions/types';
-
+import {UPDATE_CURRENCY} from '../actions/types';
 
 const initialState = {
-    item: '',
+    item: 'AUD',
 };
 
 export default function (state = initialState, action) {
     switch (action.type) {
-        case UPDATE_SORT:
+        case UPDATE_CURRENCY:
             return {
                 ...state,
                 item: action.payload
