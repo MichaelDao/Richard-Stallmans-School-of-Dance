@@ -1,29 +1,41 @@
 const express = require('express');
 const cors = require('cors');
 const app = express();
+const bodyParser = require('body-parser');
 
-// Porta para subir o servidor
+// Port for the API server
 const serverPort = 8001;
 
-// Seta as rotas default da API
+// API Default routes
 const routes = {
 	products: {
 		get: '/api/products'
 	}
 };
 
-// Aplica o CORS para aceitar requisições de outros domínios
+// Use CORS with express
 app.use(cors());
+app.use(bodyParser.json());       // to support JSON-encoded bodies
+app.use(bodyParser.urlencoded({     // to support URL-encoded bodies
+  extended: true
+}));
 
-// Registra a rota GET default, enviando o JSON como retorno
+// Test ENGLISH
+app.post('/test', function (req, res) {
+    console.log(req.body);
+    res.json({'message' : 'Test response message'});
+});
+
+// Serve product information
 app.get(routes.products.get, function (req, res) {
     res.sendFile(__dirname + '/data/products.json');
 });
 
+//Redirect all get requests to serve product info
 app.use('*', function (req, res) {
     res.redirect(routes.products.get);
 });
 
-// Inicia o servidor e avisa o usuário
+// Listen on server port
 app.listen(serverPort);
-console.log(`[products] API escutando na porta ${serverPort}.`);
+console.log(`[Server] API Server running on port: ${serverPort}.`);
