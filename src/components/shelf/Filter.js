@@ -4,6 +4,7 @@ import PropTypes from 'prop-types';
 import { connect } from "react-redux";
 
 import { updateFilters } from '../../store/actions/filterActions';
+import {callApi} from '../../store/actions/apiActions';
 
 import Checkbox from '../Checkbox';
 import PriceSlider from '../PriceSlider';
@@ -81,22 +82,7 @@ class Filter extends Component {
             this.selectedGenderboxes.add(label);
         }
 
-
-        /** BEGIN API SERVER TEST **/
-        var data = [{"username": "dmccreadie0"},{"username": "bwillerson1"},{"username": "fteese2"},{"username": "dsummerell3"}];
-
-        fetch('http://localhost:8001/test', {
-            method: 'POST',
-            body: JSON.stringify(data),
-            headers: {'Content-Type': 'application/json'}
-        }).then(response => {
-            return response.json();
-        }).then(data => {
-            alert(JSON.stringify(data));
-        }).catch(err => {
-            alert(err);
-        });
-        /** END TEST **/
+        callApi({'dummy' : 'data'});
 
         this.props.updateFilters(this.getFilterArray());
     }
