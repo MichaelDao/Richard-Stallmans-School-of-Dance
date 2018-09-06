@@ -23,7 +23,7 @@ app.use(bodyParser.urlencoded({     // to support URL-encoded bodies
 // Test ENGLISH
 app.post('/test', function (req, res) {
     console.log(req.body);
-    res.json({'message' : 'Test response message'});
+    res.json({'rating' : 'Rating update success'});
 });
 
 // Serve product information
