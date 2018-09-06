@@ -1,4 +1,4 @@
-function callApi(data) {
+function callApi(data, callback) {
     fetch('http://localhost:8001/test', {
         method: 'POST',
         body: JSON.stringify(data),
@@ -6,10 +6,17 @@ function callApi(data) {
     }).then(response => {
         return response.json();
     }).then(data => {
-        alert(JSON.stringify(data));
+        callback(data);
     }).catch(err => {
-        alert(err);
+        console.error(err);
     });
 }
+
+//Example usage
+// const dummy = {'dummy' : 'data'};
+// callApi(dummy, function (res) {
+//     alert(JSON.stringify(res));
+// });
+
 
 export {callApi}

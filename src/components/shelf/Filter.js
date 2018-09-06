@@ -75,19 +75,17 @@ class Filter extends Component {
 
     }
 
-    toggleGenderbox = (label) => {
+    toggleGenderbox = async (label) => {
         if (this.selectedGenderboxes.has(label)) {
             this.selectedGenderboxes.delete(label);
         } else {
             this.selectedGenderboxes.add(label);
         }
 
-        callApi({'dummy' : 'data'});
-
         this.props.updateFilters(this.getFilterArray());
     }
 
-    toggleColorbox = (label) => {
+    toggleColorbox = async (label) => {
         if (this.selectedColorboxes.has(label)) {
             this.selectedColorboxes.delete(label);
         } else {
