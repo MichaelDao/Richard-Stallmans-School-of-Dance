@@ -18,5 +18,4 @@ function callApi(data, callback) {
 //     alert(JSON.stringify(res));
 // });
 
-
 export {callApi}
