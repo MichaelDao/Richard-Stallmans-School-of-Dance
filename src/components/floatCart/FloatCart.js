@@ -12,6 +12,7 @@ import persistentCart from "../../persistentCart";
 import util from '../../util';
 
 import Paypal from '../Paypal';
+import Coupon from '../Coupon';
 
 class FloatCart extends Component {
 
@@ -155,7 +156,7 @@ class FloatCart extends Component {
                     <div className="float-cart__footer">
                         <div className="sub">SUBTOTAL</div>
                         <div className="sub-price">
-                            <p className="sub-price__val">
+                            <p id="totalPrice" className="sub-price__val">
                                 {`${currencySymbol(currencyType)} ${util.formatPrice(cartTotals.totalPrice, currencyType)}`}
                             </p>
                             <small className="sub-price__installment">
@@ -166,6 +167,7 @@ class FloatCart extends Component {
                         </div>
 
                         <Paypal/>
+                        <Coupon currencyType={currencyType} />
 
                         {/*
                         <div onClick={() => this.proceedToCheckout()} className="buy-btn">
