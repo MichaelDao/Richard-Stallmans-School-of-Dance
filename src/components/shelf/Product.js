@@ -56,7 +56,7 @@ const Product = (props) => {
             />
 
             <p className="shelf-item__title">{product.title}</p>
-            <StarRating productId={product.id} productRating={4} />
+            <StarRating productId={product.id} productRating={product.rating} />
             <p className="shelf-item__description">{product.description}</p>
             <div className="shelf-item__price">
                 <div className="val">
