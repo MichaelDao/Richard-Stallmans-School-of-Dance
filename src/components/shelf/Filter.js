@@ -13,7 +13,6 @@ const availableSizes = [
     'XS',
     'S',
     'M',
-    'ML',
     'L',
     'XL',
     'XXL',
@@ -135,7 +134,7 @@ class Filter extends Component {
     )
 
     render() {
-        //let price = this.price
+        let price = this.price
 
         return (
             <div className="filters">

@@ -31,6 +31,8 @@ export const fetchProducts = (filters, sortBy, callback) => dispatch => {
             let sizeFilters = [];
             let colorFilters = [];
 
+            let priceFilter = 100;
+
             //Extract gender filters from filters array
             // if (!!filters && filters.length > 0) {
             //     let mFilter = filters.indexOf('Male');
@@ -54,6 +56,8 @@ export const fetchProducts = (filters, sortBy, callback) => dispatch => {
                         colorFilters.push(filt.substring(2));
                     } else if (filt.substring(0, 2) === 'G_') {
                         genderFilters.push(filt.substring(2));
+                    } else if (filt.substring(0,2) == 'P_') {
+                        priceFilter = Number(filt.substring(2));
                     }
                 }
             }
@@ -90,6 +94,13 @@ export const fetchProducts = (filters, sortBy, callback) => dispatch => {
                         })
                     })
                 });
+            }
+
+            //Apply price filter
+            if (!!priceFilter && priceFilter < 100) {
+                  products = products.filter(function (p) {
+                      return (p.price < priceFilter);
+                  });
             }
 
             if (!!sortBy) {

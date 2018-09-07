@@ -22,10 +22,10 @@ class PriceSlider extends Component {
     return (
       <Slider
         min={0}
-        max={100}
+        max={150}
         step={1}
         value={price}
-        labels={{ 0: 'Min', 100: 'Max'}}
+        labels={{ 0: 'Min', 150: 'Max'}}
         onChange={this.handleOnChange}
       />
     )
