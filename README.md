@@ -5,7 +5,6 @@
   <img src="https://img.shields.io/badge/Nodejs-6.10.2-blue.svg?colorB=90c53f">
   <img src="https://img.shields.io/badge/Express-4.16.3-blue.svg?colorB=47535e">
   <br/>
-  <img src="./react-shopping-cart.gif">
 </p>
 
 ## Getting started
