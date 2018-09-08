@@ -8,7 +8,6 @@
     "body-parser": "^1.18.3",
     "cors": "^2.8.4",
     "express": "^4.16.3",
-    "node-sass": "^4.9.2",
     "react": "^16.3.1",
     "react-dom": "^16.4.2",
     "react-paypal-express-checkout": "^1.0.4",
@@ -21,13 +20,8 @@
     "redux-thunk": "^2.2.0"
   },
   "scripts": {
-    "build-css": "node-sass-chokidar src/ -o src/",
-    "watch-css": "npm run build-css && node-sass-chokidar src/ -o src/ --watch --recursive",
     "start": "react-scripts start",
-    "build": "react-scripts build",
-    "test": "react-scripts test --env=jsdom",
-    "eject": "react-scripts eject",
-    "server": "nodemon --watch public server.js"
+    "test": "mocha unit-tests/"
   },
   "repository": {
     "type": "git",
@@ -35,11 +29,13 @@
   },
   "keywords": [
     "React",
-    "eCommerce"
+    "eCommerce",
+    "RMIT"
   ],
   "author": "Jefferson Ribeiro",
   "license": "MIT",
   "devDependencies": {
+    "mocha": "^5.2.0",
     "nodemon": "^1.18.3"
   },
   "bugs": {
