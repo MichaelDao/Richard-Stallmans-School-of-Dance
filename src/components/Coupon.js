@@ -44,7 +44,10 @@ class Coupon extends Component {
     // The user inputted coupon code
     this.couponCode = document.getElementById('coupon').value
 
-    // Localize the original total price
+    /*
+     * Localize the original total price via
+     * a currency conversion calculation.
+     */
     const formattedPrice = util.formatPrice(this.originalPrice, this.props.currencyType)
 
     // Calculate the discount amount
