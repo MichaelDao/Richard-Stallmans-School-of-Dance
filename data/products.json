@@ -24,8 +24,7 @@
       "currencyId": "USD",
       "currencyFormat": "$",
       "isFreeShipping": true,
-      "category": "tshirt",
-      "rating": "3"
+      "category": "tshirt"
     },
     {
       "id": 32,
@@ -53,8 +52,7 @@
       "currencyId": "USD",
       "currencyFormat": "$",
       "isFreeShipping": true,
-      "category": "tshirt",
-      "rating": "3"
+      "category": "tshirt"
     },
     {
       "id": 33,
@@ -81,8 +79,7 @@
       "currencyId": "USD",
       "currencyFormat": "$",
       "isFreeShipping": true,
-      "category": "tshirt",
-      "rating": "4"
+      "category": "tshirt"
     },
     {
       "id": 34,
@@ -103,13 +100,12 @@
         "Black"
       ],
       "style": "It is 100% Organic & Fairtrade Certified Cotton",
-      "price": 40,
+      "price": 40.00,
       "installments": 5,
       "currencyId": "USD",
       "currencyFormat": "$",
       "isFreeShipping": true,
-      "category": "tshirt",
-      "rating": "3"
+      "category": "tshirt"
     },
     {
       "id": 41,
@@ -136,8 +132,7 @@
       "installments": 5,
       "currencyId": "USD",
       "currencyFormat": "$",
-      "isFreeShipping": true,
-      "rating": "3"
+      "isFreeShipping": true
     },
     {
       "id": 42,
@@ -163,8 +158,7 @@
       "installments": 5,
       "currencyId": "USD",
       "currencyFormat": "$",
-      "isFreeShipping": true,
-      "rating": "2"
+      "isFreeShipping": true
     },
     {
       "id": 43,
@@ -194,8 +188,7 @@
       "installments": 5,
       "currencyId": "USD",
       "currencyFormat": "$",
-      "isFreeShipping": true,
-      "rating": "2"
+      "isFreeShipping": true
     },
     {
       "id": 44,
@@ -222,8 +215,7 @@
       "installments": 5,
       "currencyId": "USD",
       "currencyFormat": "$",
-      "isFreeShipping": true,
-      "rating": "4"
+      "isFreeShipping": true
     },
     {
       "id": 45,
@@ -250,8 +242,7 @@
       "installments": 5,
       "currencyId": "USD",
       "currencyFormat": "$",
-      "isFreeShipping": true,
-      "rating": "2"
+      "isFreeShipping": true
     },
     {
       "id": 46,
@@ -279,8 +270,7 @@
       "installments": 5,
       "currencyId": "USD",
       "currencyFormat": "$",
-      "isFreeShipping": true,
-      "rating": "4"
+      "isFreeShipping": true
     }
   ]
 }
