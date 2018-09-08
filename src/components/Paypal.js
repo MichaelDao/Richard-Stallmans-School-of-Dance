@@ -8,14 +8,20 @@ class Paypal extends React.Component {
         let currency = 'USD';
         let total = this.props.cartTotals.totalPrice;
 
-        //I made this app id for no reason (michael) APP-80W284485P519543T
+        const onSuccess = (payment) => {
+            // Congratulation, it came here means everything's fine!
+            console.log("The payment was succeeded!", payment);
+        };
+
+        // mifrent-buyer@hotmail.com is the buyer email
         const client = {
-            sandbox: 'demo_sandbox_client_id',
+            //sandbox: 'demo_sandbox_client_id',
+            sandbox: 'AXWlFaHbe4zToktKpJ7OstILl_iFNmiojkv2Nm5MolLuiQGBv-cAqXqP_0DBpH18pn_5jR7wekSBR97o',
             production: 'YOUR-PRODUCTION-APP-ID',
         };
 
         return (
-            <div classname="middleAlign">
+            <div>
                 <PaypalExpressBtn env={env} client={client} currency={currency} total={total}
                                   style={{layout: 'vertical', size: 'medium', color: 'gold', shape: 'rect'}}
                                   funding={{allowed: 'paypal.FUNDING.CARD, paypal.FUNDING.CREDIT'}}
