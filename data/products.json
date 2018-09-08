@@ -58,7 +58,7 @@
       "id": 33,
       "sku": 300003,
       "title": "Ngarara Willim Black Tee",
-      "description": "Ngarara Willim means ‘gathering place’ in the language of the Wurundjeri, the traditional custodians of the land.",
+      "description": "",
       "availableSizes": [
         "XS",
         "S",
@@ -100,7 +100,7 @@
         "Black"
       ],
       "style": "It is 100% Organic & Fairtrade Certified Cotton",
-      "price": 40,
+      "price": 40.00,
       "installments": 5,
       "currencyId": "USD",
       "currencyFormat": "$",
@@ -158,8 +158,7 @@
       "installments": 5,
       "currencyId": "USD",
       "currencyFormat": "$",
-      "isFreeShipping": true,
-      "rating": "5"
+      "isFreeShipping": true
     },
     {
       "id": 43,
@@ -189,8 +188,7 @@
       "installments": 5,
       "currencyId": "USD",
       "currencyFormat": "$",
-      "isFreeShipping": true,
-      "rating": "2"
+      "isFreeShipping": true
     },
     {
       "id": 44,
@@ -244,8 +242,7 @@
       "installments": 5,
       "currencyId": "USD",
       "currencyFormat": "$",
-      "isFreeShipping": true,
-      "rating": "5"
+      "isFreeShipping": true
     },
     {
       "id": 46,
@@ -273,8 +270,7 @@
       "installments": 5,
       "currencyId": "USD",
       "currencyFormat": "$",
-      "isFreeShipping": true,
-      "rating": "2"
+      "isFreeShipping": true
     }
   ]
 }

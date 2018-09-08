@@ -39,7 +39,8 @@ app.post('/rating', function (req, res) {
             if (products[i].id == rating.productId) {
                 products[i].rating = rating.productRating;
                 console.log(products[i]);
-                fs.writeFile('data/products.json', JSON.stringify({products: products}), 'utf8', function(werr) {
+                // Prettify the JSON Output
+                fs.writeFile('data/products.json', JSON.stringify({products: products}, null, 2), 'utf8', function(werr) {
                     if (werr) throw werr;
                     res.json({'rating' : true});
                 });
