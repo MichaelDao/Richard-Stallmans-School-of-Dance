@@ -10,7 +10,7 @@ class Login extends React.Component{
   responseFacebook (response) {
     console.log(response);
     alert("Welcome "+response.name);
-    //anything else you want to do(save to localStorage)...
+    sessionStorage.setItem("loginData", response);
   }
 
   render () {

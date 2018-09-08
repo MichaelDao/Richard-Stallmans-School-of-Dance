@@ -6,26 +6,29 @@ import {Provider} from 'react-redux';
 
 import Shelf from '../components/shelf/Shelf';
 import Footer from '../components/Footer';
+import LoginScreen from '../components/LoginScreen';
 import FloatCart from './../components/floatCart/FloatCart';
 
 import store from '../store';
 import Corner from '../components/rmitLogo/Corner';
 
 
-class App extends Component {
+class App extends Component 
+{
     render() {
-        return (
-            <Provider store={store}>
-                <div className="App">
-                    <Corner/>
-                    <main>
-                        <Shelf/>
-                    </main>
-                    <Footer/>
-                    <FloatCart/>
-                </div>
-            </Provider>
-        )
+	return (
+	    <Provider store={store}>
+		<div className="App">
+		    <Corner/>
+		    <LoginScreen />
+		    <main>
+			<Shelf/>
+		    </main>
+		    <Footer/>
+		    <FloatCart/>
+		</div>
+	    </Provider>
+	)
     }
 }
 
