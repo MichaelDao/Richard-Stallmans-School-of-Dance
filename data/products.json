@@ -1,1 +1,277 @@
-{"products":[{"id":31,"sku":300001,"title":"Pop Tee","description":"Red tee with black and yellow deconstructed pixels.","availableSizes":["S","M","L","XL"],"availableGenders":["Male","Female"],"availableColors":["Red"],"style":"Heavy weight and 100% cotton.","price":19.95,"installments":5,"currencyId":"USD","currencyFormat":"$","isFreeShipping":true,"category":"tshirt","rating":"4"},{"id":32,"sku":300002,"title":"Marble Marle Tee","description":"These tees are very similar to our Tri-Blend Tees, and feature a similar marbling of white throughout the fabric.","availableSizes":["S","M","L","XL"],"availableGenders":["Male","Female"],"availableColors":["Light Blue","Light Grey","Dark Grey"],"style":"The RMIT logo appears in a velvet-like black flock","price":24.95,"installments":5,"currencyId":"USD","currencyFormat":"$","isFreeShipping":true,"category":"tshirt"},{"id":33,"sku":300003,"title":"Ngarara Willim Black Tee","description":"","availableSizes":["XS","S","M","L","XL"],"availableGenders":["Male","Female"],"availableColors":["Black"],"style":"","price":39.95,"installments":5,"currencyId":"USD","currencyFormat":"$","isFreeShipping":true,"category":"tshirt"},{"id":34,"sku":300004,"title":"RMIT x Etiko Fair Trade Polo","description":"This Polo was designed by RMIT and Etiko, and it was made with care by someone in India especially for you","availableSizes":["S","M","L","XL"],"availableGenders":["Male","Female"],"availableColors":["Black"],"style":"It is 100% Organic & Fairtrade Certified Cotton","price":40,"installments":5,"currencyId":"USD","currencyFormat":"$","isFreeShipping":true,"category":"tshirt"},{"id":41,"sku":400001,"title":"Premium Zip Hoodie","description":"Marble Marle Body - 320g 80/20 Fleece","availableSizes":["S","XS","M","L","XL"],"availableGenders":["Male","Female"],"availableColors":["Grey","Blue"],"style":"Black metal exposed zip front and pockets","price":69.95,"installments":5,"currencyId":"USD","currencyFormat":"$","isFreeShipping":true},{"id":42,"sku":400002,"title":"1/2 Puffer Jacket","description":"This is a hybrid jacket, with navy coloured puffer body","availableSizes":["S","XS","M","L","XL"],"availableGenders":["Male","Female"],"availableColors":["Blue"],"style":"The grey marl sleeves are thick to withstand the cold Melbourne winter.","price":99.95,"installments":5,"currencyId":"USD","currencyFormat":"$","isFreeShipping":true},{"id":43,"sku":400003,"title":"Pocket Hoodie","description":"This RMIT branded hoodie will keep you warm with its 80/20 fleece fabric.","availableSizes":["S","XS","M","L","XL"],"availableGenders":["Male","Female"],"availableColors":["Blue","Purple","Green","Navy","Grey"],"style":"Logo is embroidered with silver/white stitching","price":99.95,"installments":5,"currencyId":"USD","currencyFormat":"$","isFreeShipping":true},{"id":44,"sku":400004,"title":"Fair Trade Zipper Hoddie","description":"This hoodie was designed by RMIT and Etiko, and crafted by someone in India especially for you","availableSizes":["S","XS","M","L","XL"],"availableGenders":["Male","Female"],"availableColors":["Black","Grey"],"style":"Made from 100% Organic & Fairtrade certified cotton","price":59.95,"installments":5,"currencyId":"USD","currencyFormat":"$","isFreeShipping":true},{"id":45,"sku":400005,"title":"Fair Trade Hoodie","description":"This hoodie was designed by RMIT and Etiko, and crafted by someone in India especially for you","availableSizes":["S","XS","M","L","XL"],"availableGenders":["Male","Female"],"availableColors":["Black","Grey"],"style":"Made from 100% Organic & Fairtrade certified cotton","price":59.95,"installments":5,"currencyId":"USD","currencyFormat":"$","isFreeShipping":true},{"id":46,"sku":400006,"title":"Snug Hoodie","description":"Warm and Cozy Hoodie, great for winter.","availableSizes":["S","XS","M","L","XL"],"availableGenders":["Male","Female"],"availableColors":["Navy","Black","Blue"],"style":"Made from 100% Organic & Fairtrade certified cotton","price":54.95,"installments":5,"currencyId":"USD","currencyFormat":"$","isFreeShipping":true}]}
+{
+  "products": [
+    {
+      "id": 31,
+      "sku": 300001,
+      "title": "Pop Tee",
+      "description": "Red tee with black and yellow deconstructed pixels.",
+      "availableSizes": [
+        "S",
+        "M",
+        "L",
+        "XL"
+      ],
+      "availableGenders": [
+        "Male",
+        "Female"
+      ],
+      "availableColors": [
+        "Red"
+      ],
+      "style": "Heavy weight and 100% cotton.",
+      "price": 19.95,
+      "installments": 5,
+      "currencyId": "USD",
+      "currencyFormat": "$",
+      "isFreeShipping": true,
+      "category": "tshirt"
+    },
+    {
+      "id": 32,
+      "sku": 300002,
+      "title": "Marble Marle Tee",
+      "description": "These tees are very similar to our Tri-Blend Tees, and feature a similar marbling of white throughout the fabric.",
+      "availableSizes": [
+        "S",
+        "M",
+        "L",
+        "XL"
+      ],
+      "availableGenders": [
+        "Male",
+        "Female"
+      ],
+      "availableColors": [
+        "Light Blue",
+        "Light Grey",
+        "Dark Grey"
+      ],
+      "style": "The RMIT logo appears in a velvet-like black flock",
+      "price": 24.95,
+      "installments": 5,
+      "currencyId": "USD",
+      "currencyFormat": "$",
+      "isFreeShipping": true,
+      "category": "tshirt",
+      "rating": "3"
+    },
+    {
+      "id": 33,
+      "sku": 300003,
+      "title": "Ngarara Willim Black Tee",
+      "description": "Ngarara Willim means ‘gathering place’ in the language of the Wurundjeri, the traditional custodians of the land.",
+      "availableSizes": [
+        "XS",
+        "S",
+        "M",
+        "L",
+        "XL"
+      ],
+      "availableGenders": [
+        "Male",
+        "Female"
+      ],
+      "availableColors": [
+        "Black"
+      ],
+      "style": "",
+      "price": 39.95,
+      "installments": 5,
+      "currencyId": "USD",
+      "currencyFormat": "$",
+      "isFreeShipping": true,
+      "category": "tshirt"
+    },
+    {
+      "id": 34,
+      "sku": 300004,
+      "title": "RMIT x Etiko Fair Trade Polo",
+      "description": "This Polo was designed by RMIT and Etiko, and it was made with care by someone in India especially for you",
+      "availableSizes": [
+        "S",
+        "M",
+        "L",
+        "XL"
+      ],
+      "availableGenders": [
+        "Male",
+        "Female"
+      ],
+      "availableColors": [
+        "Black"
+      ],
+      "style": "It is 100% Organic & Fairtrade Certified Cotton",
+      "price": 40,
+      "installments": 5,
+      "currencyId": "USD",
+      "currencyFormat": "$",
+      "isFreeShipping": true,
+      "category": "tshirt"
+    },
+    {
+      "id": 41,
+      "sku": 400001,
+      "title": "Premium Zip Hoodie",
+      "description": "Marble Marle Body - 320g 80/20 Fleece",
+      "availableSizes": [
+        "S",
+        "XS",
+        "M",
+        "L",
+        "XL"
+      ],
+      "availableGenders": [
+        "Male",
+        "Female"
+      ],
+      "availableColors": [
+        "Grey",
+        "Blue"
+      ],
+      "style": "Black metal exposed zip front and pockets",
+      "price": 69.95,
+      "installments": 5,
+      "currencyId": "USD",
+      "currencyFormat": "$",
+      "isFreeShipping": true
+    },
+    {
+      "id": 42,
+      "sku": 400002,
+      "title": "1/2 Puffer Jacket",
+      "description": "This is a hybrid jacket, with navy coloured puffer body",
+      "availableSizes": [
+        "S",
+        "XS",
+        "M",
+        "L",
+        "XL"
+      ],
+      "availableGenders": [
+        "Male",
+        "Female"
+      ],
+      "availableColors": [
+        "Blue"
+      ],
+      "style": "The grey marl sleeves are thick to withstand the cold Melbourne winter.",
+      "price": 99.95,
+      "installments": 5,
+      "currencyId": "USD",
+      "currencyFormat": "$",
+      "isFreeShipping": true
+    },
+    {
+      "id": 43,
+      "sku": 400003,
+      "title": "Pocket Hoodie",
+      "description": "This RMIT branded hoodie will keep you warm with its 80/20 fleece fabric.",
+      "availableSizes": [
+        "S",
+        "XS",
+        "M",
+        "L",
+        "XL"
+      ],
+      "availableGenders": [
+        "Male",
+        "Female"
+      ],
+      "availableColors": [
+        "Blue",
+        "Purple",
+        "Green",
+        "Navy",
+        "Grey"
+      ],
+      "style": "Logo is embroidered with silver/white stitching",
+      "price": 99.95,
+      "installments": 5,
+      "currencyId": "USD",
+      "currencyFormat": "$",
+      "isFreeShipping": true
+    },
+    {
+      "id": 44,
+      "sku": 400004,
+      "title": "Fair Trade Zipper Hoddie",
+      "description": "This hoodie was designed by RMIT and Etiko, and crafted by someone in India especially for you",
+      "availableSizes": [
+        "S",
+        "XS",
+        "M",
+        "L",
+        "XL"
+      ],
+      "availableGenders": [
+        "Male",
+        "Female"
+      ],
+      "availableColors": [
+        "Black",
+        "Grey"
+      ],
+      "style": "Made from 100% Organic & Fairtrade certified cotton",
+      "price": 59.95,
+      "installments": 5,
+      "currencyId": "USD",
+      "currencyFormat": "$",
+      "isFreeShipping": true
+    },
+    {
+      "id": 45,
+      "sku": 400005,
+      "title": "Fair Trade Hoodie",
+      "description": "This hoodie was designed by RMIT and Etiko, and crafted by someone in India especially for you",
+      "availableSizes": [
+        "S",
+        "XS",
+        "M",
+        "L",
+        "XL"
+      ],
+      "availableGenders": [
+        "Male",
+        "Female"
+      ],
+      "availableColors": [
+        "Black",
+        "Grey"
+      ],
+      "style": "Made from 100% Organic & Fairtrade certified cotton",
+      "price": 59.95,
+      "installments": 5,
+      "currencyId": "USD",
+      "currencyFormat": "$",
+      "isFreeShipping": true
+    },
+    {
+      "id": 46,
+      "sku": 400006,
+      "title": "Snug Hoodie",
+      "description": "Warm and Cozy Hoodie, great for winter.",
+      "availableSizes": [
+        "S",
+        "XS",
+        "M",
+        "L",
+        "XL"
+      ],
+      "availableGenders": [
+        "Male",
+        "Female"
+      ],
+      "availableColors": [
+        "Navy",
+        "Black",
+        "Blue"
+      ],
+      "style": "Made from 100% Organic & Fairtrade certified cotton",
+      "price": 54.95,
+      "installments": 5,
+      "currencyId": "USD",
+      "currencyFormat": "$",
+      "isFreeShipping": true
+    }
+  ]
+}

@@ -276,6 +276,8 @@ footer a:hover {
   unicode-bidi: bidi-override;
   direction: rtl;
   /* the hidden clearer */
+  display: block;
+  margin-top: 60px;
 }
 .star-cb-group * {
   font-size: 2rem;
@@ -558,11 +560,10 @@ footer a:hover {
 
 .shelf-container .shelf-item__description {
     font-family: 'Open Sans', sans-serif;
-    padding-bottom: 10px;
     color: #74B89F;
     height: 75px;
     padding-top: 25px;
-    padding-bottom: 25px;
+    padding-bottom: 100px;
 }
 
 .shelf-item:hover .shelf-item__description {
@@ -962,4 +963,16 @@ footer a:hover {
     100% {
         transform: rotate(360deg);
     }
+}
+
+#coupon-container {
+    font-family: 'Open Sans', sans-serif;
+}
+
+#coupon {
+    margin-right: 10px;
+}
+
+.coupon-calc span {
+    font-weight: bold;
 }
