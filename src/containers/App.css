@@ -964,3 +964,15 @@ footer a:hover {
         transform: rotate(360deg);
     }
 }
+
+#coupon-container {
+    font-family: 'Open Sans', sans-serif;
+}
+
+#coupon {
+    margin-right: 10px;
+}
+
+.coupon-calc span {
+    font-weight: bold;
+}

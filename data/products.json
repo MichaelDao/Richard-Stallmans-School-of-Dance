@@ -52,7 +52,8 @@
       "currencyId": "USD",
       "currencyFormat": "$",
       "isFreeShipping": true,
-      "category": "tshirt"
+      "category": "tshirt",
+      "rating": "3"
     },
     {
       "id": 33,
@@ -100,7 +101,7 @@
         "Black"
       ],
       "style": "It is 100% Organic & Fairtrade Certified Cotton",
-      "price": 40.00,
+      "price": 40,
       "installments": 5,
       "currencyId": "USD",
       "currencyFormat": "$",

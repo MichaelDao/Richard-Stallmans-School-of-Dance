@@ -42,14 +42,14 @@ class Coupon extends Component {
     let totalPrice = this.props.cartTotals.totalPrice;
 
     return (
-      <div style={{color: 'gold'}}>
+      <div id="coupon-container" style={{color: 'gold'}}>
         <h2>Coupon</h2>
         <p>Apply a coupon to save some cash</p>
         <input style={{color: this.textColour}} id="coupon" type={'text'} />
         <button onClick={this.applyCoupon.bind(this)}>Apply</button>
-        { this.textColour === 'green' ? <p>Original: {this.original}</p> : null}
-        { this.textColour === 'green' ? <p>Discount: {this.discount}</p> : null}
-        { this.textColour === 'green' ? <p>New Total: {this.newTotal}</p> : null}
+        { this.textColour === 'green' ? <p class="coupon-calc"><span>Original: </span> {this.original}</p> : null}
+        { this.textColour === 'green' ? <p class="coupon-calc"><span>Discount: </span>{this.discount}</p> : null}
+        { this.textColour === 'green' ? <p class="coupon-calc"><span>New Total: </span>{this.newTotal}</p> : null}
       </div>
     );
   }
