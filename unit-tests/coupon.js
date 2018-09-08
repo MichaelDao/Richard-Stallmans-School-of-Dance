@@ -28,7 +28,7 @@ describe('Coupon Validation', function(){
   })
 
   it(`should return 'true' when the entered coupon is 'HOMY'`, function() {
-    assert.equal(isValidCoupon('RMIT'), true)
+    assert.equal(isValidCoupon('HOMY'), true)
   })
 
   it(`should return 'false' when the entered coupon is invalid`, function() {
