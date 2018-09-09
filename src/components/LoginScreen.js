@@ -19,7 +19,6 @@ class LoginScreen extends React.Component
 
 
 	responseFacebook(response) {
-    console.log(response);
     sessionStorage.setItem("loginData", response);
 		this.setState({
 			name: response.name,
@@ -59,7 +58,7 @@ class LoginScreen extends React.Component
 		if (this.state.loggedIn)
 			return (
 				<div>
-					<h3> Hello { printName } </h3>
+					<h3> Now logged in as { printName } </h3>
 				</div>
 			)
 		else

@@ -15,6 +15,7 @@
     "react-fontawesome": "^1.6.1",
     "react-google-login": "^3.2.1",
     "react-google-login-component": "^0.9.3",
+    "react-paypal-express-checkout": "^1.0.4",
     "react-rangeslider": "^2.2.0",
     "react-redux": "^5.0.7",
     "react-scripts": "1.1.4",
