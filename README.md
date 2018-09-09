@@ -27,18 +27,19 @@ npm install
 
 ### Running
 
-Run the products API server
+Run the products API server at `http://localhost:8001/api/products`
 ``` bash
 npm run server
 ```
 
-Run the react app
+Run the react app at `http://localhost:3000`
 ``` bash
 npm run client
 ```
 
-The website will be availible on `http://localhost:3000`
-The products API server will be running on `http://localhost:8001/api/products`
+- Valid Coupons: `HOMY`, `RMIT`, `SEPT`, `CSIT`
+- Facebook & Google Login works with real accounts
+- Paypal runs in a sandbox
 
 ### Testing
 
