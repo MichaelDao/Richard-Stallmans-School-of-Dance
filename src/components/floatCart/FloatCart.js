@@ -199,4 +199,3 @@ const mapStateToProps = state => ({
 });
 
 export default connect(mapStateToProps, {loadCart, updateCart, removeProduct})(FloatCart);
-
