@@ -11,7 +11,8 @@ import persistentCart from "../../persistentCart";
 
 import util from '../../util';
 
-
+import Paypal from '../Paypal';
+import Coupon from '../Coupon';
 
 class FloatCart extends Component {
 
@@ -158,7 +159,49 @@ class FloatCart extends Component {
                     {`OR UP TO ${cartTotals.installments} x ${cartTotals.currencyFormat} ${util.formatPrice(cartTotals.totalPrice / cartTotals.installments, cartTotals.currencyId)}`}
                   </span>
                 )}
-              </small>
+
+                <div className="float-cart__content">
+
+                    <div className="float-cart__header">
+                        <span className="bag">
+                            <span className="bag__quantity">
+                                {cartTotals.productQuantity}
+                            </span>
+                        </span>
+                        <span className="header-title">Shopping Bag</span>
+                    </div>
+
+                    <div className="float-cart__shelf-container">
+                        {products}
+                        {!products.length && (
+                            <p className="shelf-empty">
+                                This is your shopping bag!<br/>
+                            </p>
+                        )}
+                    </div>
+
+                    <div className="float-cart__footer">
+                        <div className="sub">SUBTOTAL</div>
+                        <div className="sub-price">
+                            <p id="totalPrice" className="sub-price__val">
+                                {`${currencySymbol(currencyType)} ${util.formatPrice(cartTotals.totalPrice, currencyType)}`}
+                            </p>
+                            <small className="sub-price__installment">
+                                {!!cartTotals.installments && (
+                                    <span>{`OR UP TO ${cartTotals.installments} x ${currencySymbol(currencyType)} ${util.formatPrice(cartTotals.totalPrice / cartTotals.installments, currencyType)}`}</span>
+                                )}
+                            </small>
+                        </div>
+
+                        <Paypal/>
+                        <Coupon currencyType={currencyType} />
+
+                        {/*
+                        <div onClick={() => this.proceedToCheckout()} className="buy-btn">
+                            Checkout
+                        </div>*/}
+                    </div>
+                </div>
             </div>
             <div onClick={() => this.proceedToCheckout()} className="buy-btn">
               Checkout

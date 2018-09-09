@@ -4,6 +4,7 @@ import PropTypes from 'prop-types';
 import { connect } from "react-redux";
 
 import { updateFilters } from '../../store/actions/filterActions';
+import {callApi} from '../../store/actions/apiActions';
 
 import Checkbox from '../Checkbox';
 import PriceSlider from '../PriceSlider';
@@ -12,7 +13,6 @@ const availableSizes = [
     'XS',
     'S',
     'M',
-    'ML',
     'L',
     'XL',
     'XXL',
@@ -74,7 +74,7 @@ class Filter extends Component {
 
     }
 
-    toggleGenderbox = (label) => {
+    toggleGenderbox = async (label) => {
         if (this.selectedGenderboxes.has(label)) {
             this.selectedGenderboxes.delete(label);
         } else {
@@ -84,7 +84,7 @@ class Filter extends Component {
         this.props.updateFilters(this.getFilterArray());
     }
 
-    toggleColorbox = (label) => {
+    toggleColorbox = async (label) => {
         if (this.selectedColorboxes.has(label)) {
             this.selectedColorboxes.delete(label);
         } else {
@@ -134,7 +134,7 @@ class Filter extends Component {
     )
 
     render() {
-        //let price = this.price
+        let price = this.price
 
         return (
             <div className="filters">

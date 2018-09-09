@@ -3,6 +3,8 @@ import PropTypes from "prop-types";
 
 import Thumb from '../Thumb';
 
+import StarRating from '../StarRating';
+
 import util from '../../util';
 
 const Product = (props) => {
@@ -40,6 +42,7 @@ const Product = (props) => {
         );
     }
 
+    //FIXME Defualt Star Rating set to 4 for TESTING
     return (
         <div className="shelf-item" data-sku={product.sku}>
             {product.isFreeShipping &&
@@ -53,6 +56,7 @@ const Product = (props) => {
             />
 
             <p className="shelf-item__title">{product.title}</p>
+            <StarRating productId={product.id} productRating={product.rating} />
             <p className="shelf-item__description">{product.description}</p>
             <div className="shelf-item__price">
                 <div className="val">
@@ -76,4 +80,3 @@ Product.propTypes = {
 };
 
 export default Product;
-
