@@ -1,4 +1,4 @@
-## 🛍️ RMIT University ecommerce cart application built with React & Redux
+## 🛍️ RMIT University E-Commerce Shopping Cart
 <p align="center">
   <img src="https://img.shields.io/badge/React-16.3.1-blue.svg">
   <img src="https://img.shields.io/badge/Redux-3.7.2-blue.svg?colorB=764abc">
@@ -7,56 +7,67 @@
   <br/>
 </p>
 
-## Getting started
+## About
+
+Software Engineering: Processes & Tools Major Assignment, special thanks to Jefferson Ribeiro for the
+<a href="https://github.com/jeffersonRibeiro/react-shopping-cart">original project</a>.
 
 #### Requirements
 
 - Node.js
 - NPM
 
-### Package installation
+### Installation
 
-Execute the following command on your terminal to install all the needed packages:
+In the projects root directory execute
 ``` bash
 npm install
 ```
 
-### Run the API Server
+### Running
 
-Start the server using:
+Run the products API server
 ``` bash
 npm run server
 ```
 
-When done, the products API will be running on  `http://localhost:8001/api/products`
-
-keep it running on a terminal and go to the next step.
-
-### Start the React App
-
-just execute the following command and thats it! :D
+Run the react app
 ``` bash
-npm start
+npm run client
 ```
 
-The application will start automatically in your browser on `http://localhost:3000`
+The website will be availible on `http://localhost:3000`
+The products API server will be running on `http://localhost:8001/api/products`
 
-<br/>
+### Testing
 
+Unit tests were done using Mocha, to run them simply execute
+``` bash
+npm run test
+```
 
-#### Using
+#### Authors
+- Michael Dao
+- Blaise Saunders
+- William Cohen
+- Mitchell Maligeorges
+
+### Tech Stack
 - React
   * Redux - for application state management
+  * Paypal Component
+  * Google Login Componenet
+  * Facebook Login Component
 - Nodejs
   * Express CORS Middleware
   * Nodemon - for watching for server changes
+  * Mocha - Unit Testing
 - Axios - for promise HTTP requests
 - Native local storage API - for product persistence in floating cart
 - CSS
   * BEM methodology
-  * SASS
 
 ### Copyright and license
 
-The MIT License (MIT). Please see License File for more information.
-
+The MIT License (MIT).
+Please see License File for more information.
