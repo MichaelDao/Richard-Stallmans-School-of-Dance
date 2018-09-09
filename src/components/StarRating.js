@@ -43,7 +43,7 @@ class StarRating extends Component {
                 id={this.state.productId + "-rating-5"}
                 name={this.state.productId + "-rating"}
                 value="5"
-                checked={this.state.productRating == 5}
+                checked={this.state.productRating === '5'}
                 onChange={this.changeRating.bind(this,this.state.productId + '-rating')}
             />
             <label htmlFor={this.state.productId + "-rating-5"}></label>
@@ -52,7 +52,7 @@ class StarRating extends Component {
                 id={this.state.productId + "-rating-4"}
                 name={this.state.productId + "-rating"}
                 value="4"
-                checked={this.state.productRating == 4}
+                checked={this.state.productRating === '4'}
                 onChange={this.changeRating.bind(this,this.state.productId + '-rating')}
             />
             <label htmlFor={this.state.productId + "-rating-4"}></label>
@@ -61,7 +61,7 @@ class StarRating extends Component {
                 id={this.state.productId + "-rating-3"}
                 name={this.state.productId + "-rating"}
                 value="3"
-                checked={this.state.productRating == 3}
+                checked={this.state.productRating === '3'}
                 onChange={this.changeRating.bind(this,this.state.productId + '-rating')}
             />
             <label htmlFor={this.state.productId + "-rating-3"}></label>
@@ -70,7 +70,7 @@ class StarRating extends Component {
                 id={this.state.productId + "-rating-2"}
                 name={this.state.productId + "-rating"}
                 value="2"
-                checked={this.state.productRating == 2}
+                checked={this.state.productRating === '2'}
                 onChange={this.changeRating.bind(this,this.state.productId + '-rating')}
             />
             <label htmlFor={this.state.productId + "-rating-2"}></label>
@@ -78,7 +78,7 @@ class StarRating extends Component {
                 type="radio" id={this.state.productId + "-rating-1"}
                 name={this.state.productId + "-rating"}
                 value="1"
-                checked={this.state.productRating == 1}
+                checked={this.state.productRating === '1'}
                 onChange={this.changeRating.bind(this,this.state.productId + '-rating')}
             />
             <label htmlFor={this.state.productId + "-rating-1"}></label>

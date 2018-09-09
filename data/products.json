@@ -25,7 +25,7 @@
       "currencyFormat": "$",
       "isFreeShipping": true,
       "category": "tshirt",
-      "rating": "3"
+      "rating": "2"
     },
     {
       "id": 32,
@@ -54,7 +54,7 @@
       "currencyFormat": "$",
       "isFreeShipping": true,
       "category": "tshirt",
-      "rating": "1"
+      "rating": "2"
     },
     {
       "id": 33,
@@ -82,7 +82,7 @@
       "currencyFormat": "$",
       "isFreeShipping": true,
       "category": "tshirt",
-      "rating": "2"
+      "rating": "5"
     },
     {
       "id": 34,
@@ -109,7 +109,7 @@
       "currencyFormat": "$",
       "isFreeShipping": true,
       "category": "tshirt",
-      "rating": "3"
+      "rating": "5"
     },
     {
       "id": 41,
@@ -137,7 +137,7 @@
       "currencyId": "USD",
       "currencyFormat": "$",
       "isFreeShipping": true,
-      "rating": "4"
+      "rating": "3"
     },
     {
       "id": 42,
@@ -164,7 +164,7 @@
       "currencyId": "USD",
       "currencyFormat": "$",
       "isFreeShipping": true,
-      "rating": "3"
+      "rating": "1"
     },
     {
       "id": 43,
@@ -223,7 +223,7 @@
       "currencyId": "USD",
       "currencyFormat": "$",
       "isFreeShipping": true,
-      "rating": "4"
+      "rating": "5"
     },
     {
       "id": 45,

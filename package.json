@@ -41,10 +41,18 @@
   ],
   "author": "Jefferson Ribeiro",
   "contributors": [
-    { "name": "Michael Dao" },
-    { "name": "Blaise Saunders" },
-    { "name": "William Cohen" },
-    { "name": "Mitchell Maligeorges" }
+    {
+      "name": "Michael Dao"
+    },
+    {
+      "name": "Blaise Saunders"
+    },
+    {
+      "name": "William Cohen"
+    },
+    {
+      "name": "Mitchell Maligeorges"
+    }
   ],
   "license": "MIT",
   "devDependencies": {

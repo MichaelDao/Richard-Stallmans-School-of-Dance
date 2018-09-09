@@ -56,7 +56,7 @@ export const fetchProducts = (filters, sortBy, callback) => dispatch => {
                         colorFilters.push(filt.substring(2));
                     } else if (filt.substring(0, 2) === 'G_') {
                         genderFilters.push(filt.substring(2));
-                    } else if (filt.substring(0,2) == 'P_') {
+                    } else if (filt.substring(0,2) === 'P_') {
                         priceFilter = Number(filt.substring(2));
                     }
                 }

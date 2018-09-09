@@ -12,7 +12,7 @@ class Paypal extends React.Component {
             // Congratulation, it came here means everything's fine!
             console.log("The payment is all good!", payment);
 
-            if (payment.paid = true) {
+            if (payment.paid === true) {
                 let hackString = "Thankyou for your order, we will deliver it to:\n"
                     + payment.address.line1 + ", " + payment.address.postal_code + ", " + payment.address.city
                     + ", " + payment.address.state

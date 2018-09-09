@@ -4,7 +4,6 @@ import PropTypes from 'prop-types';
 import { connect } from "react-redux";
 
 import { updateFilters } from '../../store/actions/filterActions';
-import {callApi} from '../../store/actions/apiActions';
 
 import Checkbox from '../Checkbox';
 import PriceSlider from '../PriceSlider';
@@ -134,8 +133,6 @@ class Filter extends Component {
     )
 
     render() {
-        let price = this.price
-
         return (
             <div className="filters">
             <h4 className="title">Sizes:</h4>

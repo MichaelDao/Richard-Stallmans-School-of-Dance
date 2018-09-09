@@ -73,7 +73,7 @@ class LoginScreen extends React.Component
 			{
 				return (
 					<div class='picBox'>
-						<img src={ this.state.picUrl } class='profilePic' height='60px' />
+						<img src={ this.state.picUrl } alt="User Profile" class='profilePic' height='60px' />
 						<span>  Now logged in as { printName } </span>
 					</div>
 				)
