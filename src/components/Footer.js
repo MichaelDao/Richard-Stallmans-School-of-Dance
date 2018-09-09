@@ -1,3 +1,7 @@
+// Programmed by Blaise Saunders
+// s3561722 - s3561722@student.rmit.edu.au
+// Last updated 20/08/2018
+
 import React from 'react';
 
 const Footer = () => (

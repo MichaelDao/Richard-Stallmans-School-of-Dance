@@ -1,3 +1,8 @@
+// Programmed by Blaise Saunders
+// s3561722 - s3561722@student.rmit.edu.au
+// Last updated 09/09/2018
+
+
 import React from 'react';
 import GoogleLogin from 'react-google-login';
 import FacebookLogin  from 'react-facebook-login';
