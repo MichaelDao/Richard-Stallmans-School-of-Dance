@@ -40,8 +40,8 @@ npm run client
 - Valid Coupons: `HOMY`, `RMIT`, `SEPT`, `CSIT`
 - Facebook & Google login works with real accounts
 - Paypal Sandbox Account Details
- - Email: mifrent-buyer@hotmail.com
- - Password: 12345678
+  - Email: mifrent-buyer@hotmail.com
+  - Password: 12345678
 
 ### Testing
 
