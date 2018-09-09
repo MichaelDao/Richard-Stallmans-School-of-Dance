@@ -24,7 +24,8 @@
       "currencyId": "USD",
       "currencyFormat": "$",
       "isFreeShipping": true,
-      "category": "tshirt"
+      "category": "tshirt",
+      "rating": "4"
     },
     {
       "id": 32,
@@ -106,7 +107,8 @@
       "currencyId": "USD",
       "currencyFormat": "$",
       "isFreeShipping": true,
-      "category": "tshirt"
+      "category": "tshirt",
+      "rating": "1"
     },
     {
       "id": 41,

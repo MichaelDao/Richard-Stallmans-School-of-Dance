@@ -31,7 +31,7 @@ class StarRating extends Component {
             productRating: newRating
         };
         callApi('rating', ratingUpdateData, function (res) {
-            alert(JSON.stringify(res));
+            console.log(JSON.stringify(res));
         });
     }
 
