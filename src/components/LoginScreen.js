@@ -18,6 +18,8 @@ class LoginScreen extends React.Component
     this.state = {
       name: '',
 			loggedIn: false,
+			havePic: false,
+			picUrl: true,
     };
 	}
 
@@ -28,6 +30,8 @@ class LoginScreen extends React.Component
 		this.setState({
 			name: response.name,
 			loggedIn: true,
+			havePic: true,
+			picUrl: response.picture.data.url,
 		});
 		this.props.nameHandler(this.state.name);
   }
@@ -37,12 +41,15 @@ class LoginScreen extends React.Component
 			return;
 
 		var googleName = googleUser.getBasicProfile().getName();
+		var picUrl = googleUser.getBasicProfile().getImageUrl();
 
 
     console.log({ googleName });
 		this.setState({
 			name: googleName,
 			loggedIn: true,
+			havePic: true,
+			picUrl: picUrl,
 		});
 
 		this.props.nameHandler(this.state.name);
@@ -61,11 +68,24 @@ class LoginScreen extends React.Component
 		var FontAwesome = require('react-fontawesome');
 
 		if (this.state.loggedIn)
-			return (
-				<div>
-					<h3> Now logged in as { printName } </h3>
-				</div>
-			)
+		{
+			if (this.state.havePic)
+			{
+				return (
+					<div class='picBox'>
+						<img src={ this.state.picUrl } class='profilePic' height='60px' />
+						<span>  Now logged in as { printName } </span>
+					</div>
+				)
+			}
+			else {
+				return (
+					<div>
+						<h3> Now logged in as { printName } </h3>
+					</div>
+				)
+			}
+		}
 		else
 			return (
 				<div>
@@ -80,10 +100,8 @@ class LoginScreen extends React.Component
 					 <br/>
 					 <GoogleLogin clientId="266867071011-484olagiajdkg9k99qt1e431djngp206.apps.googleusercontent.com"
 												scope="profile"
-
 												fetchBasicProfile={true}
 												onSuccess={this.responseGoogle}>
-
 												<FontAwesome name='google' />
 												<span> Login with Google</span>
 					</GoogleLogin>

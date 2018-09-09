@@ -13,6 +13,15 @@ main {
     margin: 20px auto 0 auto;
 }
 
+.profilePic {
+  padding: 10px;
+}
+
+.picBox {
+  display: flex;
+  align-items: center;
+}
+
 .clearfix {
     clear: both;
 }
