@@ -13,7 +13,7 @@
 Software Engineering: Processes & Tools Major Assignment, special thanks to Jefferson Ribeiro for the
 <a href="https://github.com/jeffersonRibeiro/react-shopping-cart">original project</a>.
 
-#### Requirements
+### Requirements
 
 - Node.js
 - NPM
