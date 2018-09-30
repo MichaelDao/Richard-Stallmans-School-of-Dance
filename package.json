@@ -58,9 +58,8 @@
   "license": "MIT",
   "devDependencies": {
     "mocha": "^5.2.0",
-    "nodemon": "^1.18.3",
-    "uglifyjs-webpack-plugin": "^1.0.0-rc.0"
-  },
+    "nodemon": "^1.18.3"
+},
   "bugs": {
     "url": "https://github.com/RMIT-SEPT/RichardStallman-sSchoolofDance/issues"
   }
