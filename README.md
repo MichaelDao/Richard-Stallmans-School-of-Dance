@@ -13,6 +13,9 @@
 Software Engineering: Processes & Tools Major Assignment, special thanks to Jefferson Ribeiro for the
 <a href="https://github.com/jeffersonRibeiro/react-shopping-cart">original project</a>.
 
+# A demo version of the site can be found <a href='https://rmit-shoppingcart.appspot.com/'>here!</a>
+# And a demo version of the API can be found <a href='https://api-dot-rmit-shoppingcart.appspot.com/'>here!</a>
+
 ### Requirements
 
 - Node.js
