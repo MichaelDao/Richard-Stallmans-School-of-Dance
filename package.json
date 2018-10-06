@@ -27,6 +27,7 @@
     "sinon": "^6.2.0"
   },
   "scripts": {
+    "start": "concurrently --kill-others \"npm run client\" \"npm run server\"",
     "server": "node server.js",
     "client": "react-scripts start",
     "test": "mocha unit-tests/"
@@ -57,9 +58,10 @@
   ],
   "license": "MIT",
   "devDependencies": {
+    "concurrently": "^4.0.1",
     "mocha": "^5.2.0",
     "nodemon": "^1.18.3"
-},
+  },
   "bugs": {
     "url": "https://github.com/RMIT-SEPT/RichardStallman-sSchoolofDance/issues"
   }
