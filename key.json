@@ -1,0 +1,12 @@
+{
+  "type": "service_account",
+  "project_id": "rmit-shoppingcart",
+  "private_key_id": "bdd3d21ef1237d495b9eef4f30a8a34ea7e9f7e2",
+  "private_key": "-----BEGIN PRIVATE KEY-----\nMIIEvQIBADANBgkqhkiG9w0BAQEFAASCBKcwggSjAgEAAoIBAQCdRb7rPcRBfUqx\n1CFtdX2jMOK458CFzu6G7PH62p96ENn2ToIrd7d0gcNHoQHBDfjm5CdpaOhKjuFJ\nsZKUSEUx5DbG87dIYgS1BdJgQDpEOPtsMg8PIDTIwzdClFkoLqfsYd6CBrcDO+ES\nBiIBkdjTbOJdwF2NYsfjWK0eZZz9iQs01aJZs1mF46ly+lzI3Gt+Mje+lbXGoE7N\nH4C6v1r7PViBUaZAkR9VhHGa/ZJwERDOZJahR/bqSDQECznYJqd3rqP+tcdY+npM\nfWHJXwBTZjX0JKEU/f+b2Ib6IZwQElYH1BWDzt2NWjtInyjJwbtXJc1sqqk15vth\nQYfKnQKjAgMBAAECggEAAOxnAtFbUCvj1D7PPYhjsaePlyTsdGvrP90vQWhXscIH\nSWnbW//6w1rLUaXTwKqthr9yA5s+UxIhIS50En98nLcAeHrfSw9d/eYdYEHgSYRz\n8gwqiEeVzFRcikZZYiT4LXJVeeS8fFyEpY+i/aung3XpfuyqeFbdhnS8sie1upr8\nUqdgbEguomkTJe+URMLR5sX6XbYoN9uvMIyAEZAg31G917k3TcFw94690cndKThV\nSES5xDHTD0HOBlbLiWeeVbXyuZI2CckWicQGMRLeubgWtVrrqhvwmW4mlCxkDAyc\nod7oUYsU5fq/yazIDfGsafcy4pjLv8DkcdTXMl4FEQKBgQDKdimcewaOdiu6uQW+\n+L21wfENWdiIAFMFlp4xs3APF7zxhU7V8RpgvIil3S8b9JdP5GwJJUfWA4571JYH\n6zBL3e/iDEU58tHhhIRVt6DP8pMt+EYw40ddieclGS2FxbqE/OPR5GcImNJTQsaZ\nVO7QptFOAdTNVejm7yuTp/+LywKBgQDG3HXU/n19BXUxX1gclri8uNF/oIzBnIzV\nnl2rrhChYNP9uL+itg1v6Deb3rXJXNyLMpMPlKps6K9MsnHTGnooiU4yUPtAIrl4\n8hy/Dide93TBI45vYehHQL21GzM8TD+6/V6CPN7PdzhzgnEeGbypWlM8G7Dpm1Ql\ntFvqFNE5iQKBgFMZKr0aVbeVUx+Bn5UhnSQD5T94mAJCN9E8X9PAdYcMVDXBZHk1\nS4FXALMrVJGh05UsCRe74H872HiE6ct4Qctx3WqnZKaDPpfUf0h7ZRrU0on0tEKO\nlpUS6/dzHRch8AtzjMJyf8Osje80ojT/AkJLpe7hm4ln8H8QvY8OTjn/AoGBAILc\nmvHyErRN/iPiYUJW8PTIDp0VEutp0MfWcj/CyRDZfkeN5xX1BXyp7MY21ZvP7xXu\nzxXGuCv5Jzqqhvrrho3cZUf5QI2hDDqJ4N7dOo1k/EEI2/dyD3+sG+rtHldEuf+c\nMjA0TE9sXgqtQTEUsLElTnbUpiPkYoh5Wq78yf45AoGAb5X8Q+xkkFtpiDDpz726\nVs/loWssFMU0So9Fa3/BDubj5OynduOUSZVLlZ/ez/OASVYZUyY93pxc1c+DVIMD\nYah1LYtrPeUD8ok25T/TiU+Z2weN6Uz/SDfJVdMyE8CKRRUyft0Ne2JCSdtRvHJi\nxYsgUtdUAQKA7Omh1hhtRGg=\n-----END PRIVATE KEY-----\n",
+  "client_email": "rmit-shoppingcart@appspot.gserviceaccount.com",
+  "client_id": "117222455390863183530",
+  "auth_uri": "https://accounts.google.com/o/oauth2/auth",
+  "token_uri": "https://oauth2.googleapis.com/token",
+  "auth_provider_x509_cert_url": "https://www.googleapis.com/oauth2/v1/certs",
+  "client_x509_cert_url": "https://www.googleapis.com/robot/v1/metadata/x509/rmit-shoppingcart%40appspot.gserviceaccount.com"
+}
