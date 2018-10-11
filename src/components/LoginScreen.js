@@ -26,7 +26,7 @@ class LoginScreen extends React.Component
 
 
 	responseFacebook(response) {
-    sessionStorage.setItem("loginData", response);
+		sessionStorage.setItem("loginData", response);
 		this.setState({
 			name: response.name,
 			loggedIn: true,
@@ -34,7 +34,7 @@ class LoginScreen extends React.Component
 			picUrl: response.picture.data.url,
 		});
 		this.props.nameHandler(this.state.name);
-  }
+		}
 
 	responseGoogle(googleUser) {
 		if (!googleUser.isSignedIn())
@@ -44,7 +44,7 @@ class LoginScreen extends React.Component
 		var picUrl = googleUser.getBasicProfile().getImageUrl();
 
 
-    console.log({ googleName });
+		console.log({ googleName });
 		this.setState({
 			name: googleName,
 			loggedIn: true,
@@ -57,6 +57,14 @@ class LoginScreen extends React.Component
 
 	loginFailed()
 	{
+		console.log("Login override");
+		this.setState({
+			name: "TESTUSER",
+			loggedIn: true,
+			havePic: true,
+			picUrl: "https://google.com",
+		});
+		this.props.nameHandler("nemmjeff");
 		return
 	}
 
@@ -82,6 +90,11 @@ class LoginScreen extends React.Component
 				return (
 					<div>
 						<h3> Now logged in as { printName } </h3>
+
+						<div>
+						<h3 class='recommended'> For you  { printName } </h3>
+						</div>
+
 					</div>
 				)
 			}
@@ -91,19 +104,19 @@ class LoginScreen extends React.Component
 				<div>
 				<br/>
 					<FacebookLogin
-	           appId="553425088411153"
-	           fields="name,email,picture"
-	           scope="public_profile"
-						 icon="fa-facebook"
-						 onFailure={this.loginFailed}
-	           callback={this.responseFacebook} />
+					appId="553425088411153"
+					fields="name,email,picture"
+					scope="public_profile"
+					icon="fa-facebook"
+					onFailure={this.loginFailed}
+				        callback={this.responseFacebook} />
 					 <br/>
 					 <GoogleLogin clientId="266867071011-484olagiajdkg9k99qt1e431djngp206.apps.googleusercontent.com"
-												scope="profile"
-												fetchBasicProfile={true}
-												onSuccess={this.responseGoogle}>
-												<FontAwesome name='google' />
-												<span> Login with Google</span>
+					scope="profile"
+					fetchBasicProfile={true}
+					onSuccess={this.responseGoogle}>
+					<FontAwesome name='google' />
+					<span> Login with Google</span>
 					</GoogleLogin>
 				</div>
 			);

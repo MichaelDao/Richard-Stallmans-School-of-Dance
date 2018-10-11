@@ -2,7 +2,7 @@ import {FETCH_PRODUCTS} from './types';
 import axios from 'axios';
 
 
-const productsAPI = "http://127.0.0.1:8001/api/products";
+const productsAPI = "https://api-dot-rmit-shoppingcart.appspot.com/api/products";
 
 
 const compare = {

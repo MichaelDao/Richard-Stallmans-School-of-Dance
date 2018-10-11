@@ -27,7 +27,7 @@
     "sinon": "^6.2.0"
   },
   "scripts": {
-    "start": "concurrently --kill-others \"npm run client\" \"npm run server\"",
+    "start": "npm run client | npm run server",
     "server": "node server.js",
     "client": "react-scripts start",
     "test": "mocha unit-tests/"

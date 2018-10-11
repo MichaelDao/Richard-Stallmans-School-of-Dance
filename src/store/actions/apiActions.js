@@ -1,5 +1,5 @@
 function callApi(action, data, callback) {
-    fetch('http://localhost:8001/' + action, {
+    fetch('https://api-dot-rmit-shoppingcart.appspot.com/' + action, {
         method: 'POST',
         body: JSON.stringify(data, null, 2), // Prettify the JSON output
         headers: {'Content-Type': 'application/json'}
