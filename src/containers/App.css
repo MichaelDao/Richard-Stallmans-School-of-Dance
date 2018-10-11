@@ -15,6 +15,7 @@ main {
 
 .recommended {
   display: inline;
+  padding-left: 30px;
 }
 
 .profilePic {

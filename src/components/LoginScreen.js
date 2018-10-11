@@ -27,7 +27,6 @@ class LoginScreen extends React.Component
 
 
 	responseFacebook(response) {
-		sessionStorage.setItem("loginData", response);
 		this.setState({
 			name: response.name,
 			loggedIn: true,
@@ -84,6 +83,10 @@ class LoginScreen extends React.Component
 					<div class='picBox'>
 						<img src={ this.state.picUrl } alt="User Profile" class='profilePic' height='60px' />
 						<span>  Now logged in as { printName } </span>
+						<br/>
+						<div class='recommended'>
+							<h3> For you, we recommend: Number 15, Burger King Burger </h3>
+						</div>
 					</div>
 				)
 			}
@@ -91,11 +94,6 @@ class LoginScreen extends React.Component
 				return (
 					<div>
 						<h3> Now logged in as { printName } </h3>
-
-						<div>
-						<h3 class='recommended'> For you  { printName } </h3>
-						</div>
-
 					</div>
 				)
 			}
