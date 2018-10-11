@@ -15,6 +15,7 @@ class LoginScreen extends React.Component
 		super();
 		this.responseFacebook = this.responseFacebook.bind(this);
 		this.responseGoogle = this.responseGoogle.bind(this);
+		this.loginFailed = this.loginFailed.bind(this);
     this.state = {
       name: '',
 			loggedIn: false,
