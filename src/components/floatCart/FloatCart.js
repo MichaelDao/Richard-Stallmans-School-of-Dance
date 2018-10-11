@@ -166,7 +166,7 @@ class FloatCart extends Component {
                             </small>
                         </div>
 
-                        <Paypal/>
+                        <Paypal products={cartProducts}/>
                         <Coupon currencyType={currencyType} />
 
                         {/*

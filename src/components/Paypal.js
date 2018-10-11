@@ -1,6 +1,7 @@
 import React from 'react';
 import PaypalExpressBtn from 'react-paypal-express-checkout';
 import {connect} from 'react-redux';
+import {callApi} from '../store/actions/apiActions';
 
 class Paypal extends React.Component {
     render() {
@@ -10,6 +11,11 @@ class Paypal extends React.Component {
 
         const onSuccess = (payment) => {
             // Congratulation, it came here means everything's fine!
+            let products = this.props.products;
+            callApi('sale', products, function (res) {
+                console.log(JSON.stringify(res));
+            });
+
             console.log("The payment is all good!", payment);
 
             if (payment.paid === true) {
@@ -23,6 +29,15 @@ class Paypal extends React.Component {
             }
         };
 
+        const onCancel = (info) => {
+            let products = this.props.products;
+            callApi('sale', products, function (res) {
+                console.log(JSON.stringify(res));
+            });
+        };
+
+
+
         // mifrent-buyer@hotmail.com is the buyer email
         const client = {
             //sandbox: 'demo_sandbox_client_id',
@@ -32,7 +47,7 @@ class Paypal extends React.Component {
 
         return (
             <div>
-                <PaypalExpressBtn onSuccess={onSuccess} env={env} client={client} currency={currency} total={total}
+                <PaypalExpressBtn onSuccess={onSuccess} onCancel={onCancel} env={env} client={client} currency={currency} total={total}
                                   style={{layout: 'vertical', size: 'medium', color: 'gold', shape: 'rect'}}
                                   funding={{allowed: 'paypal.FUNDING.CARD, paypal.FUNDING.CREDIT'}}
                 />
@@ -47,4 +62,3 @@ const mapStateToProps = state => ({
 });
 
 export default connect(mapStateToProps)(Paypal);
-
