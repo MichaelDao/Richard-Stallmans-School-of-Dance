@@ -19,7 +19,7 @@ class App extends Component
     super();
     this.handleData = this.handleData.bind(this);
     this.state = {
-      userName: 'Please login lol'
+      userName: 'Please login'
     };
   }
 

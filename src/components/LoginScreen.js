@@ -6,6 +6,7 @@
 import React from 'react';
 import GoogleLogin from 'react-google-login';
 import FacebookLogin  from 'react-facebook-login';
+import {callApi} from '../store/actions/apiActions';
 
 class LoginScreen extends React.Component
 {
@@ -16,15 +17,24 @@ class LoginScreen extends React.Component
 		this.responseFacebook = this.responseFacebook.bind(this);
 		this.responseGoogle = this.responseGoogle.bind(this);
 		this.loginFailed = this.loginFailed.bind(this);
-    this.state = {
-      name: '',
-			loggedIn: false,
-			havePic: false,
-			picUrl: true,
-    };
+        this.recommendationCallback = this.recommendationCallback.bind(this);
+        this.state = {
+                name: '',
+    			loggedIn: false,
+    			havePic: false,
+    			picUrl: true,
+                recommendation: null,
+        };
+
+        callApi('reccomend', {}, this.recommendationCallback);
 	}
 
-
+    recommendationCallback(product) {
+        console.log(product);
+        this.setState({
+            recommendation: product,
+        });
+    }
 
 	responseFacebook(response) {
 		this.setState({
@@ -57,12 +67,13 @@ class LoginScreen extends React.Component
 
 	loginFailed()
 	{
-		console.log("Login override");
+		console.log('Login override');
 		this.setState({
 			name: "TESTUSER",
 			loggedIn: true,
 			havePic: true,
 			picUrl: "https://google.com",
+            recommendation: this.state.recommendation,
 		});
 		this.props.nameHandler("nemmjeff");
 		return
@@ -85,7 +96,7 @@ class LoginScreen extends React.Component
 						<span>  Now logged in as { printName } </span>
 						<br/>
 						<div class='recommended'>
-							<h3> For you, we recommend: Number 15, Burger King Burger </h3>
+							<h3> For you, we recommend: {this.state.recommendation.title} </h3>
 						</div>
 					</div>
 				)
