@@ -13,8 +13,12 @@
 Software Engineering: Processes & Tools Major Assignment, special thanks to Jefferson Ribeiro for the
 <a href="https://github.com/jeffersonRibeiro/react-shopping-cart">original project</a>.
 
-#### A demo version of the site can be found <a href='https://rmit-shoppingcart.appspot.com/'>here!</a>
-#### And a demo version of the API can be found <a href='https://api-dot-rmit-shoppingcart.appspot.com/'>here!</a>
+## Resource Links
+
+- <a href='https://trello.com/b/yA4fIALD/rmit-shopping-cart'>Trello</a>
+- <a href='https://travis-ci.com/RMIT-SEPT/RichardStallman-sSchoolofDance/branches'>Travis</a>
+- <a href='https://rmit-shoppingcart.appspot.com/'>Live Website (App Engine)</a>
+- <a href='https://api-dot-rmit-shoppingcart.appspot.com/'>JSON Product API Server (App Engine)</a>
 
 ### Requirements
 
@@ -31,6 +35,8 @@ npm install
 ### Running
 
 Run the products API server at `http://localhost:8001/api/products`
+
+Note: Not required anymore, as we have a live API server availble <a href='https://api-dot-rmit-shoppingcart.appspot.com/'>here</a>.
 ``` bash
 npm run server
 ```
@@ -60,6 +66,9 @@ npm run test
 - Mitchell Maligeorges
 
 ### Tech Stack
+- Infrastructure
+  * Google App Engine
+  * Travis CI
 - React
   * Redux - for application state management
   * Paypal Component
@@ -69,6 +78,7 @@ npm run test
   * Express CORS Middleware
   * Nodemon - for watching for server changes
   * Mocha - Unit Testing
+  * Prettier - Opinionated code formatter
 - Axios - for promise HTTP requests
 - Native local storage API - for product persistence in floating cart
 - CSS
