@@ -26,7 +26,7 @@ function isValidJson(json) {
     try {
         JSON.parse(json);
         return true;
-    } catch {
+    } catch(err) {
         return false;
     }
 }
