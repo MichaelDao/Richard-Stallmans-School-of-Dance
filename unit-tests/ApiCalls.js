@@ -1,6 +1,6 @@
 // Mocha Unit Tester
 const assert = require('assert')
-const fetch = require('node-fetch');
+const axios = require('axios');
 
 const rating = {productId: 32, productRating: 5};
 const sale = [{id: 32, quantity: 1}];
@@ -8,9 +8,10 @@ const sale = [{id: 32, quantity: 1}];
 //Same as '../src/store/actions/apiActions'
 function callApi(action, data, callback) {
     //https://api-dot-rmit-shoppingcart.appspot.com/
-    fetch('https://api-dot-rmit-shoppingcart.appspot.com/' + action, {
+    axios({
         method: 'POST',
-        body: JSON.stringify(data, null, 2), // Prettify the JSON output
+        url: 'https://api-dot-rmit-shoppingcart.appspot.com/' + action,
+        data: JSON.stringify(data, null, 2), // Prettify the JSON output
         headers: {'Content-Type': 'application/json'}
     }).then(response => {
         return response.json();
