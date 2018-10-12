@@ -8,7 +8,7 @@ const sale = [{id: 32, quantity: 1}];
 //Same as '../src/store/actions/apiActions'
 function callApi(action, data, callback) {
     //https://api-dot-rmit-shoppingcart.appspot.com/
-    fetch('http://127.0.0.1:8001/' + action, {
+    fetch('https://api-dot-rmit-shoppingcart.appspot.com/' + action, {
         method: 'POST',
         body: JSON.stringify(data, null, 2), // Prettify the JSON output
         headers: {'Content-Type': 'application/json'}
