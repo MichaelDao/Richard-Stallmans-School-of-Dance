@@ -67,7 +67,7 @@ class LoginScreen extends React.Component
 
 	loginFailed()
 	{
-		console.log('Login override');
+		/*console.log('Login override');
 		this.setState({
 			name: "TESTUSER",
 			loggedIn: true,
@@ -75,7 +75,7 @@ class LoginScreen extends React.Component
 			picUrl: "https://google.com",
             recommendation: this.state.recommendation,
 		});
-		this.props.nameHandler("nemmjeff");
+		this.props.nameHandler("nemmjeff");*/
 		return
 	}
 
